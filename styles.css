@@ -1,4 +1,6 @@
 html, body{
+    
+    
 }
 #mynavbar-inverse {
  background-color: #544B3E;   
@@ -25,41 +27,54 @@ height: 30px;
     background-color: #615849;
     color: white;
 }
-.monster {
- height: 331px;
- width: 320px;
+.left-monster {
+ height: 250px;
+ width: 240px;
+ display: inline-block;
+ float: left;
 }
-.left{
+
+.left-{
   display: inline-block;
 }
-.right{
-  display: inline-block;
+.right-monster{
+    height: 250px;
+    width: 240px;
+    display: inline-block;
     float: right;
 }
 .container {
-    height: 100%;
-   /* background-color: beige; */
+    background-image: url(images/wood-background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: beige; */
    
 }
 .header{
  display: block;   
 }
-
+.row .middle{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
 .header .col-lg-8 {
     display: block; 
     height: 110px;
 }
-.col-lg-4 {
-    height: 110px;
-    display: inline-block;
-}
-.main .col-lg-2 {
-    height: 100%;
-    display: block; 
-}
 .col-lg-6 {
-    height: 100%;
+    height: 250px;
+    display: block;
+    border: 1px solid white;
 }
+.banner{
+ font-size: 80px;
+    text-align: center;
+    color: orange;
+    font-family: "SomethingStrange";
+}
+
 .footer {
  display: block;   
 }
@@ -68,13 +83,9 @@ a:active {color: #fff; text-decoration: underline; }
 a:visited {color: #008000; text-decoration: underline; }
 a:hover {color: #ff0000; text-decoration: none; }
 
-.footer .col-sm-1 {
-    height: 100%;
-    
-  background-color: #5F5646;
-}
 
-.col-lg-6 {
+.col-lg-3 {
     display: inline-block;
     height: 100%;
+    border: 1px solid white;
 }
