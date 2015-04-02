@@ -53,11 +53,17 @@ height: 30px;
 .header{
  display: block;   
 }
+
+@font-face {
+  font-family: 'Something Strange';
+  src: url('Something Strange') format('truetype');
+}
+
 .row .middle{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .header .col-lg-8 {
     display: block; 
@@ -69,10 +75,10 @@ height: 30px;
     border: 1px solid white;
 }
 .banner{
- font-size: 80px;
+ font-size: 60px;
     text-align: center;
-    color: orange;
-    font-family: "SomethingStrange";
+    color: red;
+    font-family: "Something Strange";
 }
 
 .footer {
@@ -83,9 +89,12 @@ a:active {color: #fff; text-decoration: underline; }
 a:visited {color: #008000; text-decoration: underline; }
 a:hover {color: #ff0000; text-decoration: none; }
 
+img:hover{ height: 640px; width: 600px; position: fixed;}
 
 .col-lg-3 {
     display: inline-block;
     height: 100%;
     border: 1px solid white;
+    overflow:hidden;
+    position:relative;
 }
