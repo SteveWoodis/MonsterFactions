@@ -36,18 +36,18 @@ app.config(function($routeProvider){
         }
     })
 
-    .when('/item/:itemId', {
-    templateUrl: 'projects/submitbids.html',
-    controller: 'submitbidsCtrl',
-     resolve: {
-            editBidAmount: function (gprojectService, $route) {
-            return gprojectService.getProject($route.current.params.projectId);
-            },
-            submitBidRef: function (gprojectService, $route) {
-            return gprojectService.updateProject($route.current.params.projectId);
-            }
-        }
-    })
+//    .when('/item/:itemId', {
+//    templateUrl: 'projects/submitbids.html',
+//    controller: 'submitbidsCtrl',
+//     resolve: {
+//            editBidAmount: function (gprojectService, $route) {
+//            return gprojectService.getProject($route.current.params.projectId);
+//            },
+//            submitBidRef: function (gprojectService, $route) {
+//            return gprojectService.updateProject($route.current.params.projectId);
+//            }
+//        }
+//    })
     .otherwise({
         redirectTo: '/landing'
     })
