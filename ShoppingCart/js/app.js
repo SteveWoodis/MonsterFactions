@@ -2,7 +2,7 @@
 
 // App Module: the name AngularStore matches the ng-app attribute in the main <html> tag
 // the route provides parses the URL and injects the appropriate partial page
-var storeApp = angular.module('AngularStore', []).
+var storeApp = angular.module('MonsterStore', []).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/store', {
@@ -30,7 +30,7 @@ storeApp.factory("DataService", function () {
     var myStore = new store();
 
     // create shopping cart
-    var myCart = new shoppingCart("AngularStore");
+    var myCart = new shoppingCart("MonsterStore");
 
     // enable PayPal checkout
     // note: the second parameter identifies the merchant; in order to use the 
