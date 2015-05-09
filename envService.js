@@ -10,7 +10,7 @@ angular.module('monsterApp').service('envService', function envService($location
         
         ref.createUser({
             email    : UserData.reg_email,
-            password : UserData.reg_password,
+            password : UserData.reg_password, 
             username: UserData.reg_username
         }, function(error, usrData) {
         if (error) {

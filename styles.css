@@ -1,53 +1,101 @@
 html, body{
+  background: url('/images/landscape.jpg');
+  margin-top: 40px;
+    height: 1280px;
+    width: 800px; 
     
-    
+}
+@font-face {
+    font-family: 'DarkCrystalScript';
+    src: url('DarkCrystalScript.eot');
+    src: url('DarkCrystalScript.eot?#iefix') format('embedded-opentype'),
+    url('DarkCrystalScript.ttf') format('truetype'),
+    url('DarkCrystalScript-webfont.svg#FontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DarkCrystalOutline';
+    src: url('DarkCrystalOutline.eot');
+    src: url('DarkCrystalOutline.eot?#iefix') format('embedded-opentype'),
+    url('DarkCrystalOutline.ttf') format('truetype'),
+    url('DarkCrystalOutline-webfont.svg#FontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 #mynavbar-inverse {
  background-color: #544B3E;   
 }
-.footer-info{
- color: white;
-    font-size: 12px;
-    margin-top: 10px;
-}
-.footer-info-right{
- color: white;
-    float: right;
-    font-size: 12px;
-    margin-top: 10px;
-}
+
 .title{
  text-align: center; 
  font-family: "comic sans ms";
  font-size: 24px;
- color: white;
+}
+.spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -40px;
+    display: inline-block;
+}
+
+.spacer-font {
+    font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 21px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -40px;
+    display: inline-block;
+    
 }
 .footer-inverse{
-height: 30px;
+    height: 30px;
     background-color: #615849;
     color: white;
 }
-.left-monster {
+.upper-left-monster {
  height: 250px;
  width: 240px;
  display: inline-block;
  float: left;
 }
-
+.upper-left-monster:hover {
+    position: 0 0;
+}
+.lower-left-monster {
+ height: 250px;
+ width: 240px;
+ display: inline-block;
+ float: left;
+}
+.lower-left-monster:hover {
+    position: 0 0;
+}
 .left-{
   display: inline-block;
 }
-.right-monster{
+.upper-right-monster{
     height: 250px;
     width: 240px;
     display: inline-block;
     float: right;
 }
+.upper-right-monster:hover {
+    position: 0 0;
+}
+.lower-right-monster{
+    height: 250px;
+    width: 240px;
+    display: inline-block;
+    float: right;
+}
+.lower-right-monster:hover {
+    position: 0 0;
+}
 .container {
-    background-image: url(images/wall.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* background-color: beige; */
+    
+    margin-left: 10 auto;
    
 }
 .header{
@@ -84,17 +132,38 @@ height: 30px;
 .footer {
  display: block;   
 }
-a:link {color: #ffffff; text-decoration: underline; }
-a:active {color: #fff; text-decoration: underline; }
+/*a:link {color: #000000; text-decoration: underline; }
+a:active {color: #000; text-decoration: underline; }
 a:visited {color: #008000; text-decoration: underline; }
-a:hover {color: #ff0000; text-decoration: none; }
+a:hover {color: #ff0000; text-decoration: none; }*/
 
-img:hover{ height: 640px; width: 600px; position: fixed;}
 
 .col-lg-3 {
     display: inline-block;
     height: 100%;
-    border: 1px solid white;
     overflow:hidden;
     position:relative;
+}
+.img {
+    hover: height: 540px; width: 500px; position: 100 100;
+}
+.footer-info-left{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.footer-info-right{
+    color: red;
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.social {
+ height: 20px;
+    width: 20px;
+}
+.pictures {
+    display: block;
 }

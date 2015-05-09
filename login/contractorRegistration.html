@@ -1,8 +1,7 @@
-<p>General Registration Page</p>
-<form name="contractorForm" ng-submit="newContractor">
+<form name="monsterForm" ng-submit="newMonster">
 <div>
-    <select ng-model="User.reg_contractorId">
-        <option ng-repeat="contractor in regContractors" value="{{contractor.contractorId}}">{{contractor.contractorName}}</option>
+    <select ng-model="User.monsterId">
+        <option ng-repeat="monster in monsters" value="{{monster.monsterId}}">{{monster.monsterName}}</option>
     </select>     
 </div>
     

@@ -9,6 +9,10 @@ app.config(function($routeProvider){
         templateUrl: '/login/login.html',
         controller: 'loginController'
     })
+    .when('/mChat', {
+        templateUrl: '/mChat/views/monsterChat-Index.html',
+        controller: 'chatCtrl'
+    })
     .when('/registration', {
         templateUrl: '/login/contractorRegistration.html',
         controller: 'conRegController'
@@ -19,22 +23,23 @@ app.config(function($routeProvider){
     })
     .when('/contact', {
      templateUrl: '/contact.html',
-        controller: 'contactCtrl',
-        resolve: {
-           getProjectsRef: function (gprojectService) {
-            return gprojectService.getProjects();
-            }
-        }
+        controller: 'contactCtrl'
+        // resolve: {
+        //    getProjectsRef: function (gprojectService) {
+        //     return gprojectService.getProjects();
+        //     }
+        // }
     })
     .when('/monsterNation', {
      templateUrl: '/monsterNation.html',
-        controller: 'monsterNationCtrl',
-        resolve: {
-            createProjectsRef: function (gprojectService) {
-            return gprojectService.createProjects();
-            }
-        }
+        controller: 'monsterNationCtrl'
     })
+    .when('/join', {
+      templateUrl: 'views/join.html',
+      controller: 'JoinCtrl'
+    }).otherwise({
+      redirectTo: '/join'
+    });
 
 //    .when('/item/:itemId', {
 //    templateUrl: 'projects/submitbids.html',
