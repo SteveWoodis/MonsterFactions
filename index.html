@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="monsterApp">
 <head>
+   
+    <title>MonsterFactions</title>
+
     <link rel="stylesheet" href="styles.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <!-- Optional theme -->
+    <script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+    <script src="https://cdn.pubnub.com/pubnub-crypto.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    
+     <link rel="stylesheet" href="mChat/styles/prettify.css">
+    <link rel="stylesheet" href="mChat/styles/flat-ui.css">
+    <link rel="stylesheet" href="mChat/styles/main.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<script type="text/javascript" src="script.js"></script> -->
@@ -17,23 +26,35 @@
      <div class="row">
         
         <div class="container-fluid" >
+            <nav class="navbar navbar-inverse" class="row navigation">
+                <div class="container-fluid" >
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="col-xs-12">
-                <ul class="monster-navbar">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="col-xs-12">
+                        <ul class="nav navbar-nav">
                 
                     <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-                    <li class="spacer"><a href="/ShoppingCart/monsterstore.htm" class="spacer-font">MonsterFactions Store</a></li>
-                    <li class="spacer"><a href="/#/mChat" class="spacer-font">Monster Chat</a></li>
-                    <li class="spacer"><a href="/#/aboutUs" class="spacer-font">About Us</a></li>
+                    <li class="spacer"><a href="/#/store" class="spacer-font">Monster Store</a></li>
+                    <li class="spacer"><a href="/#/chat" class="spacer-font">Monster Chat</a></li>
+                    <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
                     <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
                     <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
-                </ul>
-                
-            </div>
-        </div><!-- /.container-fluid -->
-     
+
+                    </ul>
+                <!-- <form class="navbar-form navbar-left" role="search">
+                    <div class="search-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <div class="search-button">
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </form>-->
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
      </div>
+
      <div class="row">
         <div class="viewer" ng-view></div>
      </div>
@@ -50,6 +71,37 @@
             
     
 </div>
+    <script language="javascript">
+      window.scrl2 = function(el) {
+        if (!$(el)[0]) {
+          return;
+        }
+        $('html, body').animate({
+          scrollTop: $(el).offset().top
+        }, 600);
+      }
+    </script>
+
+    <script>
+    piAId='29622';
+    piCId='23596';
+    (function(){
+    function async_load(){
+    var s=document.createElement('script');s.type='text/javascript';
+    s.src=('https:'==document.location.protocol?'https://pi':'http://cdn')
+    +'.pardot.com/pd.js';
+    var c=document.getElementsByTagName('script')[0];
+    c.parentNode.insertBefore(s,c);}
+    if(window.attachEvent){window.attachEvent('onload',async_load);}
+    else{window.addEventListener('load',async_load,false);}})();
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create','UA-16927549-1');
+    ga('send','pageview');
+    </script>
+
 <!-- Angular -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
 <script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
@@ -62,14 +114,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
 <script src="http://cdn.pubnub.com/pubnub.min.js"></script>
-<script src="scripts/pubnub-angular.js"></script>
+<script src="../mChat/scripts/pubnub-angular.js"></script>
+<!-- <script src="/mChat/scripts/controllers/joinCtrl.js"></script> -->
 <script type="text/javascript" src="mainController.js"></script>
 <script type="text/javascript" src="envService.js"></script>
 <script src="/login/loginController.js"></script>
 <script src="/login/conRegController.js"></script>
 <script src="landingCtrl.js"></script>
+<script type="text/javascript" src="ShoppingCart/js/controller.js"></script>
+<script type="text/javascript" src="ShoppingCart/js/store.js"></script>
+<script type="text/javascript" src="ShoppingCart/js/product.js"></script>
+<script type="text/javascript" src="ShoppingCart/js/shoppingCart.js"></script>
+<!-- <script type="text/javascript" src="mChat/scripts/controllers/ChatCtrl.js"></script>-->
+<script type="text/javascript" src="mChat/scripts/controllers/main.js"></script>
 <script src="aboutUsCtrl.js"></script>
 <script src="contactCtrl.js"></script>
+<script type="text/javascript" src="mGalleryCtrl.js"></script>
     
     
 </body>

@@ -1,15 +1,5 @@
-<!doctype html>
-<html>
-<head>
-  <script src="https://cdn.pubnub.com/pubnub.min.js"></script>
-  <script src="https://cdn.pubnub.com/pubnub-crypto.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="http://pubnub.github.io/angular-js/scripts/pubnub-angular.js"></script>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-</head>
-<body>
-<div class="container" ng-app="PubNubAngularApp" ng-controller="ChatCtrl">
+
+<div class="container" ng-app="monsterApp" ng-controller="ChatCtrl">
 
 <h4>Online Users</h4>
 <ul>
@@ -39,7 +29,7 @@
 //
 // Set Up Your Angular Module & Controller(s)
 //
-angular.module('PubNubAngularApp', ["pubnub.angular.service"])
+angular.module('monsterApp', ["pubnub.angular.service"])
 .controller('ChatCtrl', function($rootScope, $scope, $location, PubNub) {
   // make up a user id (you probably already have this)
   $scope.userId   = "User " + Math.round(Math.random() * 1000);
@@ -96,5 +86,4 @@ angular.module('PubNubAngularApp', ["pubnub.angular.service"])
   });
 });
 </script>
-</body>
-</html>
+
