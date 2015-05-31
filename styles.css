@@ -2,7 +2,7 @@ html, body{
   background: url('/images/landscape.jpg');
   /*margin-top: 35px;*/
     height: 1280px;
-    width: 800px; 
+    width: 100%; 
     
 }
 @font-face {
@@ -25,6 +25,7 @@ html, body{
 }
 #mynavbar-inverse {
  background-color: #544B3E;   
+   
 }
 
 .title{
@@ -39,6 +40,20 @@ html, body{
     display: inline-block;
     color: red;
 
+}
+.angel {
+    height: 360px;
+    width: 180px;
+    display: inline-block;
+    padding-right: 0px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.angel-1 {
+    height: 180px;
+    width: 90px;
+    display: inline-block;
+    padding-right: 0px; 
 }
 
 .spacer-font {
@@ -64,8 +79,9 @@ html, body{
  height: 250px;
  width: 240px;
  display: inline-block;
- float: left;
-}
+ padding-right: 0px;
+
+ }
 .upper-left-monster:hover {
     position: 0 0;
 }
@@ -99,10 +115,16 @@ html, body{
 .lower-right-monster:hover {
     position: 0 0;
 }
-.container {
+.main-container {
     
-    margin-left: 10 auto;
-   
+    width: 90%;
+    margin: 0px auto;   
+}
+.container {
+    width: 90%;
+    margin: 0px auto;
+    background-color: beige;
+    opacity: .8;
 }
 .header{
  display: block;   
