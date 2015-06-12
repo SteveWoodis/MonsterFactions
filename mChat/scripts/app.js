@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('monsterApp', ["pubnub.angular.service"]).config(function($routeProvider) {
+  angular.module('PubNubAngularApp', ["pubnub.angular.service"]).config(function($routeProvider) {
     return $routeProvider.when('/join', {
       templateUrl: 'views/join.html',
       controller: 'JoinCtrl'

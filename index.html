@@ -13,16 +13,16 @@
     <script src="https://cdn.pubnub.com/pubnub-crypto.min.js"></script>
     <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-     <link rel="stylesheet" href="mChat/styles/prettify.css">
-    <link rel="stylesheet" href="mChat/styles/flat-ui.css">
-    <link rel="stylesheet" href="mChat/styles/main.css">
+     <link rel="stylesheet" href="styles/prettify.css">
+    <link rel="stylesheet" href="styles/flat-ui.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<script type="text/javascript" src="script.js"></script> -->
 </head>
 <body ng-controller="mainController">
- <div class="container">
+ <div class="chat-container">
      <div class="row">
         
         <div class="container-fluid" >
@@ -35,7 +35,7 @@
                 
                     <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
                     <li class="spacer"><a href="/#/store" class="spacer-font">Monster Store</a></li>
-                    <li class="spacer"><a href="/#/chat" class="spacer-font">Monster Chat</a></li>
+                    <li class="spacer"><a href="/mChat/index.html" class="spacer-font">Monster Chat</a></li>
                     <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
                     <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
                     <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
@@ -106,15 +106,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
 <script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
 <!-- Firebase -->
-<script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
+<!-- <script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script> -->
 
 <!-- AngularFire -->
-<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+<!-- <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
-<script src="http://cdn.pubnub.com/pubnub.min.js"></script>
-<script src="../mChat/scripts/pubnub-angular.js"></script>
+<script src="scripts/pubnub-angular.js"></script>
 <!-- <script src="/mChat/scripts/controllers/joinCtrl.js"></script> -->
 <script type="text/javascript" src="mainController.js"></script>
 <script type="text/javascript" src="envService.js"></script>
@@ -126,7 +125,7 @@
 <script type="text/javascript" src="ShoppingCart/js/product.js"></script>
 <script type="text/javascript" src="ShoppingCart/js/shoppingCart.js"></script>
 <!-- <script type="text/javascript" src="mChat/scripts/controllers/ChatCtrl.js"></script>-->
-<script type="text/javascript" src="mChat/scripts/controllers/main.js"></script>
+<script type="text/javascript" src="scripts/controllers/main.js"></script>
 <script src="aboutUsCtrl.js"></script>
 <script src="contactCtrl.js"></script>
 <script type="text/javascript" src="mGalleryCtrl.js"></script>

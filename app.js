@@ -1,11 +1,12 @@
-var app = angular.module('monsterApp', ['firebase', 'ngRoute', "pubnub.angular.service"]);
+var app = angular.module('monsterApp', ['ngRoute', "pubnub.angular.service"]);
+//var app = angular.module('monsterApp', ['firebase', 'ngRoute', "pubnub.angular.service"]);
 app.config(function($routeProvider){
     $routeProvider
     .when('/join', {
-      templateUrl: 'views/join.html',
+      templateUrl: '/mChat/views/join.html',
       controller: 'JoinCtrl'
     }).when('/chat', {
-      templateUrl: 'views/chat.html',
+      templateUrl: '/mChat/views/chat.html',
       controller: 'ChatCtrl'
     })
     .when('/landing', {
@@ -24,8 +25,8 @@ app.config(function($routeProvider){
         templateUrl: 'mGallery.html',
         controller: 'mGalleryCtrl'
     })
-    .when('/contact', {
-     templateUrl: '/contact.html',
+    .when('/Contact', {
+     templateUrl: '/contactus.html',
         controller: 'contactCtrl'
         // resolve: {
         //    getProjectsRef: function (gprojectService) {

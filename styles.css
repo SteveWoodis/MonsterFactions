@@ -27,11 +27,36 @@ html, body{
  background-color: #544B3E;   
    
 }
-
+.monster-label {
+    font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 20px;
+    margin: 10px auto;
+    color: white;
+}
+.opening {
+    font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    color: red;
+}
+.normal-text {
+    font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 20px;
+    color: red;
+}
 .title{
  text-align: center; 
- font-family: "comic sans ms";
- font-size: 24px;
+ font-family: 'DarkCrystalScript', sans-serif;
+ font-size: 48px;
+ color:white;
+}
+.join {
+    font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 24px;
+    color: white;
+    
 }
 .spacer {
     margin-left: 10px;
@@ -78,7 +103,7 @@ html, body{
 .upper-left-monster {
  height: 250px;
  width: 240px;
- display: inline-block;
+ display: block;
  padding-right: 0px;
 
  }
@@ -88,28 +113,44 @@ html, body{
 .lower-left-monster {
  height: 250px;
  width: 240px;
- display: inline-block;
- float: left;
+ display: block;
+ float: right;
 }
 .lower-left-monster:hover {
     position: 0 0;
 }
-.left-{
+.left-col {
   display: inline-block;
+  width: 25%;
+  float: left;
+}
+.right-col {
+    width: 25%;
+    float: right;
+    display: inline-block;
+}
+.landing-container {
+    background: #C6C6B1;
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    opacity: .8;
+
 }
 .upper-right-monster{
     height: 250px;
     width: 240px;
-    display: inline-block;
-    float: right;
+    display: block;
 }
-.upper-right-monster:hover {
-    position: 0 0;
+.chat-container {
+  width: 80%;
+  margin: 10px auto;
 }
+
 .lower-right-monster{
     height: 250px;
     width: 240px;
-    display: inline-block;
+    display: block;
     float: right;
 }
 .lower-right-monster:hover {
@@ -123,7 +164,7 @@ html, body{
 .container {
     width: 90%;
     margin: 0px auto;
-    background-color: beige;
+    background-color: #C6C6B1;
     opacity: .8;
 }
 .header{

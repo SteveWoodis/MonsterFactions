@@ -5,7 +5,7 @@
   when the "Join" button is clicked.
   */
 
-  angular.module('monsterApp').controller('JoinCtrl', function($rootScope, $scope, $location, PubNub) {
+  angular.module('PubNubAngularApp').controller('JoinCtrl', function($rootScope, $scope, $location, PubNub) {
     $scope.data = {
       username: 'Anonymous ' + Math.floor(Math.random() * 1000)
     };
@@ -16,13 +16,10 @@
       $rootScope.data.city = (_ref1 = $scope.data) != null ? _ref1.city : void 0;
       $rootScope.data["super"] = (_ref2 = $scope.data) != null ? _ref2["super"] : void 0;
       $rootScope.data.uuid = Math.floor(Math.random() * 1000000) + '__' + $scope.data.username;
-      //$rootScope.secretKey = $scope.data["super"] ? 'sec-c-MmIzMDAzNDMtODgxZC00YzM3LTk1NTQtMzc4NWQ1NmZhYjIy' : null;
       $rootScope.secretKey = $scope.data["super"] ? 'sec-c-ZDk1ZjMxMGUtOWQwMy00ZWQ5LThjZmMtMDBjOGUxZDZiMjFh' : null;
       $rootScope.authKey = $scope.data["super"] ? 'ChooseABetterSecret' : null;
       PubNub.init({
-        //subscribe_key: 'sub-c-d66562f0-62b0-11e3-b12d-02ee2ddab7fe',
         subscribe_key: 'sub-c-43bc55aa-de4f-11e4-bb6f-0619f8945a4f',
-        //publish_key: 'pub-c-e2b65946-31f0-4941-a1b8-45bab0032dd8',
         publish_key: 'pub-c-b3f76d0b-2a61-490d-acd4-dae96f7acfe3',
         secret_key: $rootScope.secretKey,
         auth_key: $rootScope.authKey,
@@ -78,7 +75,7 @@
   */
 
 
-  angular.module('monsterApp').controller('ChatCtrl', function($rootScope, $scope, $location, PubNub) {
+  angular.module('PubNubAngularApp').controller('ChatCtrl', function($rootScope, $scope, $location, PubNub) {
     var _ref;
     if (!PubNub.initialized()) {
       $location.path('/join');
