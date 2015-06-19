@@ -21,6 +21,14 @@
   margin-top:6px;
   overflow:scroll;
 }
+.chat-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.big-container {
+   background: url('/images/landscape.jpg');
+   
+}
 
 .userlabel {
   margin-right:8px;
