@@ -111,8 +111,8 @@ shoppingCart.prototype.clearItems = function () {
 shoppingCart.prototype.addCheckoutParameters = function (serviceName, merchantID, options) {
 
     // check parameters
-    if (serviceName != "PayPal" && serviceName != "Google") {
-        throw "serviceName must be 'PayPal' or 'Google'.";
+    if (serviceName != "PayPal") {
+        throw "serviceName must be 'PayPal'.";
     }
     if (merchantID == null) {
         throw "A merchantID is required in order to checkout.";
@@ -144,9 +144,6 @@ shoppingCart.prototype.checkout = function (serviceName, clearCart) {
     switch (parms.serviceName) {
         case "PayPal":
             this.checkoutPayPal(parms, clearCart);
-            break;
-        case "Google":
-            this.checkoutGoogle(parms, clearCart);
             break;
         default:
             throw "Unknown checkout service: " + parms.serviceName;
@@ -180,44 +177,6 @@ shoppingCart.prototype.checkoutPayPal = function (parms, clearCart) {
     // build form
     var form = $('<form/></form>');
     form.attr("action", "https://www.paypal.com/cgi-bin/webscr");
-    form.attr("method", "POST");
-    form.attr("style", "display:none;");
-    this.addFormFields(form, data);
-    this.addFormFields(form, parms.options);
-    $("body").append(form);
-
-    // submit form
-    this.clearCart = clearCart == null || clearCart;
-    form.submit();
-    form.remove();
-}
-
-// check out using Google Wallet
-// for details see:
-// developers.google.com/checkout/developer/Google_Checkout_Custom_Cart_How_To_HTML
-// developers.google.com/checkout/developer/interactive_demo
-shoppingCart.prototype.checkoutGoogle = function (parms, clearCart) {
-
-    // global data
-    var data = {};
-
-    // item data
-    for (var i = 0; i < this.items.length; i++) {
-        var item = this.items[i];
-        var ctr = i + 1;
-        data["item_name_" + ctr] = item.sku;
-        data["item_description_" + ctr] = item.name;
-        data["item_price_" + ctr] = item.price.toFixed(2);
-        data["item_quantity_" + ctr] = item.quantity;
-        data["item_merchant_id_" + ctr] = parms.merchantID;
-    }
-
-    // build form
-    var form = $('<form/></form>');
-    // NOTE: in production projects, use the checkout.google url below;
-    // for debugging/testing, use the sandbox.google url instead.
-    //form.attr("action", "https://checkout.google.com/api/checkout/v2/merchantCheckoutForm/Merchant/" + parms.merchantID);
-    form.attr("action", "https://sandbox.google.com/checkout/api/checkout/v2/checkoutForm/Merchant/" + parms.merchantID);
     form.attr("method", "POST");
     form.attr("style", "display:none;");
     this.addFormFields(form, data);

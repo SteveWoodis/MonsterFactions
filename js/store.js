@@ -1,14 +1,6 @@
 ﻿//----------------------------------------------------------------
 // store (contains the products)
 //
-// NOTE: nutritional info from http://www.cspinet.org/images/fruitcha.jpg
-// score legend:
-// 0: below 5% of daily value (DV)
-// 1: 5-10% DV
-// 2: 10-20% DV
-// 3: 20-40% DV
-// 4: above 40% DV
-//
 function store() {
     this.products = [
         new product("zomb0", "Zombie Apocalypse", "Eat one every day to keep the doctor away!", 12, 90, 0, 2, 0, 1, 2),
@@ -30,22 +22,9 @@ function store() {
         new product("zomb66", "Zombie", "Enjoy it (but don't forget to peel first).", 4, 60, 0, 3, 0, 0, 1),
         new product("zomb77", "Zombie", "Believe it or not, they are berries!", 6, 120, 4, 3, 0, 1, 3),
         new product("zomb88", "Zombie", "Beautiful, healthy, and delicious.", 7, 40, 0, 4, 1, 1, 2),
-        new product("zomb99", "Zombie", "Easier to peel than oranges!", 8, 50, 3, 4, 1, 1, 2)
+        new product("zomb99", "Zombie", "I can run faster than you!", 8, 50, 3, 4, 1, 1, 2)
     ];
-    this.dvaCaption = [
-        "Negligible",
-        "Low",
-        "Average",
-        "Good",
-        "Great"
-    ];
-    this.dvaRange = [
-        "below 5%",
-        "between 5 and 10%",
-        "between 10 and 20%",
-        "between 20 and 40%",
-        "above 40%"
-    ];
+    
 }
 store.prototype.getProduct = function (sku) {
     for (var i = 0; i < this.products.length; i++) {
