@@ -70,7 +70,7 @@ app.factory("DataService", function () {
     // shopping cart with PayPal, you have to create a merchant account with 
     // PayPal. You can do that here:
     // https://www.paypal.com/webapps/mpp/merchant
-    myCart.addCheckoutParameters("PayPal", "monsterfactions@yahoo.com");
+    myCart.addCheckoutParameters("PayPal", "monsterbus15@yahoo.com");
 
    
     // return data object with store and cart

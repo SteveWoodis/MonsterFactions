@@ -176,7 +176,7 @@ shoppingCart.prototype.checkoutPayPal = function (parms, clearCart) {
 
     // build form
     var form = $('<form/></form>');
-    form.attr("action", "https://www.paypal.com/cgi-bin/webscr");
+    form.attr("action", "https://www.sandbox.paypal.com/cgi-bin/webscr");
     form.attr("method", "POST");
     form.attr("style", "display:none;");
     this.addFormFields(form, data);
