@@ -73,19 +73,19 @@ Create new...
 <div class='col-md-10'>
 <small class='marker'>Chat History</small>
 <form ng-submit='publish()'>
-<div class='input-group'>
-<input class='input-sm form-control' ng-model='newMessage' type='text'>
-<span class='input-group-btn'>
-<input class='input-sm btn btn-default' type='submit' value='Send'>
-</span>
-</div>
+	<div class='input-group'>
+	<input class='input-sm form-control' ng-model='newMessage' type='text'>
+	<span class='input-group-btn'>
+	<input class='input-sm btn btn-default' type='submit' value='Send'>
+	</span>
+	</div>
 </form>
 <div class='well chatbox' id='chat_history'>
 <ul class='list-unstyled'>
 <li ng-repeat='message in messages'>
 <i class='fa fa-comment'></i>
 &nbsp;
-{{datetime}}{{message}}
+{{message}}
 </li>
 </ul>
 </div>

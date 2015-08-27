@@ -97,23 +97,29 @@
       Date.prototype.timeNow = function () {
      return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
       }
-      var newDate = new Date();
-      var datetime = newDate.today() + " " + " @ " + " " + newDate.timeNow();
-      $scope.datetime = datetime;
+      // var newDate = new Date();
+      // var datetime = newDate.today() + " " + " @ " + " " + newDate.timeNow();
+      // $scope.datetime = datetime;
 
       PubNub.ngPublish({
-        
+
         channel: $scope.selectedChannel,
-        datetime: $scope.datetime,
         message: {
           text: $scope.newMessage,
-          time: $scope.datetime,
-          user: $scope.data.username
+          user: $scope.data.username,
+          time: timeString()
         }
 
-      });
+      }
+      );
+     
       return $scope.newMessage = '';
     };
+
+    function timeString() {
+      var newDate = new Date();
+      return newDate.today() + " " + " @ " + " " + newDate.timeNow();
+    }
     /* Create a new channel*/
 
     $scope.createChannel = function() {
@@ -200,6 +206,8 @@
       $rootScope.$on(PubNub.ngMsgEv($scope.selectedChannel), function(ngEvent, payload) {
         var msg;
         msg = payload.message.user ? "[" + payload.message.user + "] " + payload.message.text : "[unknown] " + payload.message;
+        msg = payload.message.time ? payload.message.time + " " + msg : msg;
+        
         return $scope.$apply(function() {
           return $scope.messages.unshift(msg);
         });
