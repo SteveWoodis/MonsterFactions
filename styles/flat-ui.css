@@ -457,12 +457,33 @@ small,
 .text-success:hover {
   color: #25a35a;
 }
+@font-face {
+    font-family: 'DarkCrystalScript';
+    src: url('DarkCrystalScript.eot');
+    src: url('DarkCrystalScript.eot?#iefix') format('embedded-opentype'),
+    url('DarkCrystalScript.ttf') format('truetype'),
+    url('DarkCrystalScript-webfont.svg#FontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 .text-info {
-  color: #3498db;
+  font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 20px;
+    margin: 10px auto;
+    color: red;
+    padding-left: 15px;
+  
 }
 .text-info:hover {
   color: #2a7aaf;
 }
+.picture{
+  height: 240px;
+  width: 135px;
+}
+
+
+
 h1,
 h2,
 h3,
