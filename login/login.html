@@ -17,14 +17,53 @@
 
 <div>
     <input type="text" ng-model="User.reg_email" placeholder="email"/>
-    <input type="text" ng-model="User.reg_password" placeholder="password"/>
+    <input type="password" ng-model="User.reg_password" placeholder="password"/>
     
     <button ng-click="logMeIn()">Log In</button><br/>
 </div>-->
-<div>
-	<p class="monster-label"> We are not requiring logins at this time. Enjoy the site!</p>
+<div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Monsterfaction Login!</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
 
-</div>	
+</div>
+
+
+<!--$scope.show = function() {-->
+<!--ModalService.showModal({-->
+<!--templateUrl: 'modal.html',-->
+<!--controller: "ModalController"-->
+<!--}).then(function(modal) {-->
+<!--modal.element.modal();-->
+<!--modal.close.then(function(result) {-->
+<!--$scope.message = "You said " + result;-->
+<!--});-->
+<!--});-->
+<!--};-->
+
+
+<!--app.controller('ModalController', function($scope, close) {-->
+
+<!--$scope.close = function(result) {-->
+<!--close(result, 500); // close, but give 500ms for bootstrap to animate-->
+<!--};-->
+
+<!--});-->
+<!---->
 <br/>
 <br/>
 <br/>

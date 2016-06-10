@@ -1,59 +1,54 @@
 html, body{
-  background: url('/images/landscape.jpg');
-  /*margin-top: 35px;*/
+
     height: 1280px;
     width: 100%; 
-    
+
 }
 @font-face {
     font-family: 'DarkCrystalScript';
-    src: url('DarkCrystalScript.eot');
-    src: url('DarkCrystalScript.eot?#iefix') format('embedded-opentype'),
     url('DarkCrystalScript.ttf') format('truetype'),
     url('DarkCrystalScript-webfont.svg#FontName') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'DarkCrystalOutline';
-    src: url('DarkCrystalOutline.eot');
-    src: url('DarkCrystalOutline.eot?#iefix') format('embedded-opentype'),
-    url('DarkCrystalOutline.ttf') format('truetype'),
-    url('DarkCrystalOutline-webfont.svg#FontName') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 #mynavbar-inverse {
  background-color: #544B3E;   
    
 }
 .monster-label {
-    font-family: 'DarkCrystalScript', sans-serif;
+    /*font-family: 'DarkCrystalScript', sans-serif;*/
+    font-family: Calibri;
     font-size: 20px;
     margin: 10px auto;
     color: white;
+    padding-left: 40px;
 }
 .opening {
-    font-family: 'DarkCrystalScript', sans-serif;
+    font-family: Calibri;
     font-size: 20px;
     text-align: center;
     width: 70%;
     margin: 10px auto;
-    color: red;
+    color: black;
+}
+.center{
+    text-align: center;
+    margin: auto;
 }
 .normal-text {
-    font-family: 'DarkCrystalScript', sans-serif;
+    font-family: Calibri;
     font-size: 20px;
-    color: red;
+    color: black;
 }
 .title{
  text-align: center; 
- font-family: 'DarkCrystalScript', sans-serif;
+ font-family: Calibri;
  font-size: 48px;
  color:white;
 }
 .join {
-    font-family: 'DarkCrystalScript', sans-serif;
+    font-family: Calibri;
     font-size: 24px;
     color: white;
     
@@ -63,7 +58,7 @@ html, body{
     margin-right: 10px;
     margin-top: 10px;
     display: inline-block;
-    color: red;
+    color: black;
 
 }
 .angel {
@@ -82,9 +77,9 @@ html, body{
 }
 
 .spacer-font {
-    font-family: 'DarkCrystalScript', sans-serif;
+    font-family: Calibri;
     font-size: 21px;
-    color: red;
+    color: black;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -30px;
@@ -107,18 +102,13 @@ html, body{
  padding-right: 0px;
 
  }
-.upper-left-monster:hover {
-    position: 0 0;
-}
 .lower-left-monster {
  height: 250px;
  width: 240px;
  display: block;
  float: right;
 }
-.lower-left-monster:hover {
-    position: 0 0;
-}
+
 .left-col {
   display: inline-block;
   width: 25%;
@@ -129,13 +119,23 @@ html, body{
     float: right;
     display: inline-block;
 }
-.landing-container {
-    background: #C6C6B1;
-    width: 50%;
-    margin: 0 auto;
-    display: inline-block;
-    opacity: .8;
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.flex-landing {
+    padding: 0;
+    margin-left: 25%;
+    list-style: none;
+    background-color: #C6C6B1;
+    opacity: .80;
+    width:50%;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 }
 .upper-right-monster{
     height: 250px;
@@ -153,27 +153,23 @@ html, body{
     display: block;
     float: right;
 }
-.lower-right-monster:hover {
-    position: 0 0;
-}
+
 .main-container {
     
     width: 90%;
     margin: 0px auto;   
 }
 .container {
-    width: 90%;
+    background: url('/images/landscape.jpg');
+    /*margin-top: 35px;*/
+    background-repeat: no-repeat;
+    width: 100%;
     margin: 0px auto;
-    background-color: #C6C6B1;
+    /*background-color: #C6C6B1;*/
     opacity: .9;
 }
 .header{
  display: block;   
-}
-
-@font-face {
-  font-family: 'Something Strange';
-  src: url('Something Strange') format('truetype');
 }
 
 .row .middle{
@@ -194,7 +190,7 @@ html, body{
 .banner{
  font-size: 60px;
     text-align: center;
-    color: red;
+    color: black;
     font-family: "Something Strange";
 }
 
@@ -214,16 +210,18 @@ a:hover {color: #ff0000; text-decoration: none; }*/
     position:relative;
 }
 .img {
-    hover: height: 540px; width: 500px; position: 100 100;
+    height: 540px;
+    width: 500px;
+    //position: 100 100;
 }
 .footer-info-left{
-    color: red;
+    color: black;
     font-size: 12px;
     margin-top: 10px;
     display: inline-block;
 }
 .footer-info-right{
-    color: red;
+    color: black;
     float: right;
     font-size: 12px;
     margin-top: 10px;
@@ -242,5 +240,5 @@ a:hover {color: #ff0000; text-decoration: none; }*/
 }
 .backdrop {
     background-color: white;
-    opacity: 75%;
+    opacity: .75;
 }
