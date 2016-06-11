@@ -1,130 +1,143 @@
 <!DOCTYPE html>
 <html ng-app="monsterApp">
 <head>
-   
-    <title>MonsterFactions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
-     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <title>MonsterFactions</title>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-     <link rel="stylesheet" href="styles/prettify.css">
-    <link rel="stylesheet" href="styles/flat-ui.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--<script type="text/javascript" src="script.js"></script> -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+  <link rel="stylesheet" href="styles/prettify.css">
+  <link rel="stylesheet" href="styles/flat-ui.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-controller="mainController">
- <div class="container">
-     <div class="row">
-        
-        <div class="container-fluid" >
-            <nav class="navbar navbar-inverse" class="row navigation">
-                <div class="container-fluid" >
+<div class="container">
+  <div class="row">
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="col-xs-12">
-                        <ul class="nav navbar-nav">
-                
-                    <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-                    <li class="spacer"><a href="/#/store" class="spacer-font">Monster Store</a></li>
-                    <li class="spacer"><a href="/src/mChat/index.html" class="spacer-font">Monster Chat</a></li>
-                    <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
-                    <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
-                    <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse" class="row navigation">
+        <div class="container-fluid">
 
-                    </ul>
-                <!-- <form class="navbar-form navbar-left" role="search">
-                    <div class="search-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <div class="search-button">
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                    </div>
-                </form>-->
-                    </div>
-                </div><!-- /.container-fluid -->
-            </nav>
-        </div>
-     </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="col-xs-12">
+            <ul class="nav navbar-nav">
 
-     <div class="row">
-        <div class="viewer" ng-view></div>
-     </div>
-    <div class="row footer">
-        <div class="col-xs-6">
-            <p class="footer-info-left">All materials viewable on this site are copyrighted by the owner of the material</p>
-            <p class="footer-info-left"> Copyright &#169; 2015 MonsterFactions,Inc</p>
-            <p class="footer-info-right"><a href=""><img src="images/twitter.png" title="Follow us on Twitter" class="social"></a><a href=""><img src="images/facebook.png" title="Follow us on Facebook" class="social"></a><a href="http://www.pinterest.com/monster factions"><img src="images/pinterest.png" title="Follow us on Pinterest" class="social"></a></p>
-         </div>       
-        <div class="col-xs-6">
-           <p class="footer-info-right">Welcome to MonsterFactions. <a href="/src/login"><strong>Try Here</strong></a></p>
-         </div> 
-     </div>          
-            
-    
+              <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
+              <li class="spacer"><a href="/#/store" class="spacer-font">Monster Store</a></li>
+              <li class="spacer"><a href="/src/mChat/index.html" class="spacer-font">Monster Chat</a></li>
+              <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
+              <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
+              <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
+
+            </ul>
+            <!-- <form class="navbar-form navbar-left" role="search">
+                <div class="search-group">
+                <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <div class="search-button">
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </form>-->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="viewer" ng-view></div>
+  </div>
+  <div class="row footer">
+    <div class="col-xs-6">
+      <p class="footer-info-left">All materials viewable on this site are copyrighted by the owner of the material</p>
+      <p class="footer-info-left"> Copyright &#169; 2015 MonsterFactions,Inc</p>
+      <p class="footer-info-right"><a href=""><img src="images/twitter.png" title="Follow us on Twitter" class="social"></a><a
+        href=""><img src="images/facebook.png" title="Follow us on Facebook" class="social"></a><a
+        href="http://www.pinterest.com/monster factions"><img src="images/pinterest.png" title="Follow us on Pinterest"
+                                                              class="social"></a></p>
+    </div>
+    <div class="col-xs-6">
+      <p class="footer-info-right">Welcome to MonsterFactions. <a href="/src/login"><strong>Try Here</strong></a></p>
+    </div>
+  </div>
+
+
 </div>
-    <script language="javascript">
-      window.scrl2 = function(el) {
-        if (!$(el)[0]) {
-          return;
-        }
-        $('html, body').animate({
-          scrollTop: $(el).offset().top
-        }, 600);
-      }
-    </script>
+<script language="javascript">
+  window.scrl2 = function (el) {
+    if (!$(el)[0]) {
+      return;
+    }
+    $('html, body').animate({
+      scrollTop: $(el).offset().top
+    }, 600);
+  }
+</script>
 
-    <script>
-    piAId='29622';
-    piCId='23596';
-    (function(){
-    function async_load(){
-    var s=document.createElement('script');s.type='text/javascript';
-    s.src=('https:'==document.location.protocol?'https://pi':'http://cdn')
-    +'.pardot.com/pd.js';
-    var c=document.getElementsByTagName('script')[0];
-    c.parentNode.insertBefore(s,c);}
-    if(window.attachEvent){window.attachEvent('onload',async_load);}
-    else{window.addEventListener('load',async_load,false);}})();
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create','UA-16927549-1');
-    ga('send','pageview');
-    </script>
+<script>
+  piAId = '29622';
+  piCId = '23596';
+  (function () {
+    function async_load() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn')
+        + '.pardot.com/pd.js';
+      var c = document.getElementsByTagName('script')[0];
+      c.parentNode.insertBefore(s, c);
+    }
 
- <script src="/angular.min.js"></script>
- <script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
+    if (window.attachEvent) {window.attachEvent('onload', async_load);}
+    else {window.addEventListener('load', async_load, false);}
+  })();
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-16927549-1');
+  ga('send', 'pageview');
+</script>
 
- <script src="js/ModalPopupWindow.js" type="text/javascript"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/pubnub/web/dist/pubnub.min.js"></script>
+
 <script type="text/javascript" src="js/app.js"></script>
-<script src="scripts/pubnub-angular.js"></script>
+<script type="text/javascript" src="js/ModalPopupWindow.js"></script>
 <script type="text/javascript" src="js/mainController.js"></script>
 <script type="text/javascript" src="js/envService.js"></script>
-<script type="text/javascript" src="/src/login/loginController.js"></script>
-<script type="text/javascript" src="/src/login/conRegController.js"></script>
 <script type="text/javascript" src="js/landingCtrl.js"></script>
 <script type="text/javascript" src="js/controller.js"></script>
 <script type="text/javascript" src="js/store.js"></script>
 <script type="text/javascript" src="js/product.js"></script>
 <script type="text/javascript" src="js/shoppingCart.js"></script>
-<script type="text/javascript" src="scripts/controllers/main.js"></script>
 <script type="text/javascript" src="js/aboutUsCtrl.js"></script>
 <script type="text/javascript" src="js/contactCtrl.js"></script>
 <script type="text/javascript" src="js/mGalleryCtrl.js"></script>
-<script  type="text/javascript" src="js/product.js"></script>
- <script type="text/javascript" src="js/store.js"></script>
- <script type="text/javascript" src="js/shoppingCart.js"></script>
- <script type="text/javascript" src="js/controller.js"></script>
- <script type="text/javascript" src="js/modalController.js"></script>
-
+<script type="text/javascript" src="js/product.js"></script>
+<script type="text/javascript" src="js/store.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/ModalController.js"></script>
+<script type="text/javascript" src="login/loginController.js"></script>
+<script type="text/javascript" src="login/conRegController.js"></script>
+<script type="text/javascript" src="scripts/pubnub-angular.js"></script>
+<script type="text/javascript" src="scripts/controllers/main.js"></script>
 
 </body>
 </html>
