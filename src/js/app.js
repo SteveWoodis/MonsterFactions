@@ -3,22 +3,22 @@ var app = angular.module('monsterApp', ['ngRoute', 'pubnub.angular.service', 'ui
 app.config(function($routeProvider){
     $routeProvider
     .when('/join', {
-      templateUrl: '/mChat/views/join.html',
+      templateUrl: '/src/mChat/views/join.html',
       controller: 'JoinCtrl'
     }).when('/chat', {
-      templateUrl: '/mChat/views/chat.html',
+      templateUrl: '/src/mChat/views/chat.html',
       controller: 'ChatCtrl'
     })
     .when('/landing', {
-        templateUrl: '/landing.html',
+        templateUrl: '/src/landing.html',
         controller: 'landingCtrl'
     })
     .when('/login', {
-        templateUrl: '/login/login.html',
+        templateUrl: '/src/login/login.html',
         controller: 'loginController'
     })
     .when('/registration', {
-        templateUrl: '/login/contractorRegistration.html',
+        templateUrl: '/src/login/contractorRegistration.html',
         controller: 'conRegController'
     })
     .when('/Gallery', {
@@ -26,7 +26,7 @@ app.config(function($routeProvider){
         controller: 'mGalleryCtrl'
     })
     .when('/Contact', {
-     templateUrl: '/contactus.html',
+     templateUrl: '/src/contactus.html',
         controller: 'contactCtrl'
         // resolve: {
         //    getProjectsRef: function (gprojectService) {
@@ -48,7 +48,7 @@ app.config(function($routeProvider){
       }).
      
     when('/monsterNation', {
-     templateUrl: '/monsterNation.html',
+     templateUrl: '/src/monsternation.html',
         controller: 'monsterNationCtrl'
     })
     .otherwise({
