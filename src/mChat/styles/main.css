@@ -15,7 +15,7 @@
     font-style: normal;
 }
 html,body{
-   background: url('/src/images/landscape.jpg');
+   background: url('/assets/images/landscape.jpg');
   /*margin-top: 35px;*/
     height: 1280px;
     width: 100%; 
@@ -56,7 +56,7 @@ html,body{
   margin: 0 auto;
 }
 .big-container {
-   background: url('/src/images/landscape.jpg');
+   background: url('/assets/images/landscape.jpg');
    
 }
 
