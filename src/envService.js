@@ -1,4 +1,4 @@
-angular.module('monsterApp').service('envService', function envService($location, $timeout, $q, $firebaseObject, $http) {
+angular.module('monsterApp').service('envService', function envService($location, $timeout, $q, $firebaseObject) {
    var ref = new Firebase("https://monsterfactions.firebaseio.com/");
     var gUserName = '';
     var uid;
@@ -29,7 +29,7 @@ angular.module('monsterApp').service('envService', function envService($location
             })
         }
     });
-    }
+    };
     
    
 

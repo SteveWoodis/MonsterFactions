@@ -160,9 +160,8 @@ html, body{
     margin: 0px auto;   
 }
 .container {
-    background: url('/src/images/landscape.jpg');
     /*margin-top: 35px;*/
-    background-repeat: no-repeat;
+    background: url('assets/images/landscape.jpg') no-repeat;
     width: 100%;
     margin: 0px auto;
     /*background-color: #C6C6B1;*/
