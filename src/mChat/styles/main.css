@@ -1,10 +1,10 @@
-@media (max-width: 767px)
-{
+@media (max-width: 767px) {
     body {
         padding-right: 0px;
         padding-left: 0px;
     }
 }
+
 @font-face {
     font-family: 'DarkCrystalScript';
     src: url('../fonts/DarkCrystalScript.eot');
@@ -14,12 +14,14 @@
     font-weight: normal;
     font-style: normal;
 }
-html,body{
-   background: url('/assets/images/landscape.jpg');
-  /*margin-top: 35px;*/
+
+html, body {
+    background: url('/assets/images/landscape.jpg');
+    /*margin-top: 35px;*/
     height: 1280px;
-    width: 100%; 
+    width: 100%;
 }
+
 .spacer {
     margin-left: 10px;
     margin-right: 10px;
@@ -28,6 +30,7 @@ html,body{
     color: red;
 
 }
+
 .spacer-font {
     font-family: 'DarkCrystalScript', sans-serif;
     font-size: 21px;
@@ -36,48 +39,52 @@ html,body{
     margin-right: 10px;
     margin-top: -30px;
     display: inline-block;
-    
+
 }
+
 .chatbox {
-  font-family: Helvetica;
-  width:100%;
-  height:20em;
-  margin-top:6px;
-  overflow:scroll;
+    font-family: Helvetica;
+    width: 100%;
+    height: 20em;
+    margin-top: 6px;
+    overflow: scroll;
 }
+
 .container {
     width: 90%;
     margin: 0px auto;
     background-color: #C6C6B1;
     opacity: .9;
 }
+
 .chat-container {
-  width: 60%;
-  margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
 }
+
 .big-container {
-   background: url('/assets/images/landscape.jpg');
-   
+    background: url('/assets/images/landscape.jpg');
+
 }
 
 .userlabel {
-  margin-right:8px;
-  margin-top:6px;
+    margin-right: 8px;
+    margin-top: 6px;
 }
 
 .roomlabel {
-  margin-right:8px;
-  margin-top:6px;
+    margin-right: 8px;
+    margin-top: 6px;
 }
 
 #getting_started {
-  background-color:;
+    background-color:;
 }
 
 .brandP {
-  padding-top:20px;
+    padding-top: 20px;
 }
 
 .padding-20 {
-  padding:20px;
+    padding: 20px;
 }
