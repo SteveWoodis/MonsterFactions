@@ -14,9 +14,29 @@
     font-weight: normal;
     font-style: normal;
 }
-.chat-container {
-  width: 80%;
-  margin: 10px auto;
+html,body{
+   background: url('/src/images/landscape.jpg');
+  /*margin-top: 35px;*/
+    height: 1280px;
+    width: 100%; 
+}
+.spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    color: red;
+
+}
+.spacer-font {
+    font-family: 'DarkCrystalScript', sans-serif;
+    font-size: 21px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -30px;
+    display: inline-block;
+    
 }
 .chatbox {
   font-family: Helvetica;
@@ -24,6 +44,20 @@
   height:20em;
   margin-top:6px;
   overflow:scroll;
+}
+.container {
+    width: 90%;
+    margin: 0px auto;
+    background-color: #C6C6B1;
+    opacity: .9;
+}
+.chat-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.big-container {
+   background: url('/src/images/landscape.jpg');
+   
 }
 
 .userlabel {
