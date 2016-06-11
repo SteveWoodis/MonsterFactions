@@ -1,4 +1,4 @@
-var app = angular.module('monsterApp',['ngRoute']);
+var app = angular.module('monsterApp');
 app.controller('loginController',function($scope, envService, $location){
 	  $scope.User = {};
       $scope.logMeIn = function(){

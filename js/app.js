@@ -1,4 +1,4 @@
-var app = angular.module('monsterApp', ['ngRoute', "pubnub.angular.service"]);
+var app = angular.module('monsterApp', ['ngRoute', 'pubnub.angular.service', 'ui-bootstrap']);
 //var app = angular.module('monsterApp', ['firebase', 'ngRoute', "pubnub.angular.service"]);
 app.config(function($routeProvider){
     $routeProvider

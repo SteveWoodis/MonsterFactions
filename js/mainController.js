@@ -1,4 +1,4 @@
-var app = angular.module('monsterApp',['ui-bootstrap']);
+var app = angular.module('monsterApp');
 app.controller('mainController', function($scope){
    
 });
