@@ -18,55 +18,44 @@
 </head>
 <body ng-controller="mainController">
 <div class="container">
-  <div class="row">
+    <div class="flex-row">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="col-xs-12">
+              <ul class="nav navbar-nav">
+                <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
+                <li class="spacer"><a href="/#/store" class="spacer-font">Monster Store</a></li>
+                <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
+                <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
+                <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
+                <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
 
-    <div class="container-fluid">
-      <nav class="navbar navbar-inverse" class="row navigation">
-        <div class="container-fluid">
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="col-xs-12">
-            <ul class="nav navbar-nav">
-
-              <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-              <li class="spacer"><a href="/#/store" class="spacer-font">Monster Store</a></li>
-              <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
-              <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
-              <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
-              <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
-
-            </ul>
-            <!-- <form class="navbar-form navbar-left" role="search">
-                <div class="search-group">
-                <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <div class="search-button">
-                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                </div>
-            </form>-->
+              </ul>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!-- flex-row -->
+    <div class="flex-middle-row">
+      <div class="flex-left-column"></div>
+      <div class="flex-container-main">
+        <div class="viewer" ng-view></div>
+      </div>
+      <div c;ass="flex-right-column"></div>
+    </div>
+    <div class="flex-row">
+      <div class="flex-footer">
+        <div class="col-xs-6">
+          <p class="footer-info-left">All materials viewable on this site are copyrighted by the owner of the material</p>
+          <p class="footer-info-left"> Copyright &#169; 2015 MonsterFactions,Inc</p>
+          <p class="footer-info-right"><a href=""><img src="assets/images/twitter.png" title="Follow us on Twitter" class="social"></a>
+            <a href=""><img src="assets/images/facebook.png" title="Follow us on Facebook" class="social"></a>
+            <a href="http://www.pinterest.com/monster factions"><img src="assets/images/pinterest.png" title="Follow us on Pinterest" class="social"></a></p>
+          <div class="col-xs-6">
+            <p class="footer-info-right">Welcome to MonsterFactions. <a href="/src/login"><strong>Try Here</strong></a></p>
           </div>
-        </div><!-- /.container-fluid -->
-      </nav>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="viewer" ng-view></div>
-  </div>
-  <div class="row footer">
-    <div class="col-xs-6">
-      <p class="footer-info-left">All materials viewable on this site are copyrighted by the owner of the material</p>
-      <p class="footer-info-left"> Copyright &#169; 2015 MonsterFactions,Inc</p>
-      <p class="footer-info-right"><a href=""><img src="assets/images/twitter.png" title="Follow us on Twitter" class="social"></a><a
-        href=""><img src="assets/images/facebook.png" title="Follow us on Facebook" class="social"></a><a
-        href="http://www.pinterest.com/monster factions"><img src="assets/images/pinterest.png" title="Follow us on Pinterest"
-                                                              class="social"></a></p>
-    </div>
-    <div class="col-xs-6">
-      <p class="footer-info-right">Welcome to MonsterFactions. <a href="/src/login"><strong>Try Here</strong></a></p>
-    </div>
-  </div>
-
 
 </div>
 <script language="javascript">
