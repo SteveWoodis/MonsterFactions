@@ -47,9 +47,21 @@ app.config(function($routeProvider){
       }).
      
     when('/monsterNation', {
-     templateUrl: '/src/monsternation.html',
+     templateUrl: 'monsternation.html',
         controller: 'monsterNationCtrl'
-    })
+    }),
+       when('werewolf-landing',{
+           templateUrl: 'werewolf-landing.html',
+           controller: 'werewolf-landingCtrl'
+       }),
+        when('vampire-landing', {
+            templateUrl: 'vampire-landing.html',
+            controller: 'vampire-landingCtrl'
+        }),
+        when('zombie-landing', {
+           templateUrl: 'zombie-landing.html',
+           controller: 'zombie-landingCtrl'
+        })
     .otherwise({
         redirectTo: '/landing'
     })
