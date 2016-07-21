@@ -51,15 +51,15 @@ app.config(function($routeProvider){
         controller: 'monsterNationCtrl'
     }),
        when('werewolf-landing',{
-           templateUrl: 'werewolf-landing.html',
+           templateUrl: 'mChat/werewolf-landing.html',
            controller: 'werewolf-landingCtrl'
        }),
         when('vampire-landing', {
-            templateUrl: 'vampire-landing.html',
+            templateUrl: 'mChat/vampire-landing.html',
             controller: 'vampire-landingCtrl'
         }),
         when('zombie-landing', {
-           templateUrl: 'zombie-landing.html',
+           templateUrl: 'mChat/zombie-landing.html',
            controller: 'zombie-landingCtrl'
         })
     .otherwise({
