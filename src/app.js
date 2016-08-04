@@ -40,25 +40,25 @@ app.config(function($routeProvider){
       when('/products/:productSku', {
         templateUrl: 'partials/product.htm',
         controller: storeController
-      }).
-      when('/cart', {
+    }).
+    when('/cart', {
         templateUrl: 'partials/shoppingCart.htm',
         controller: storeController
-      }).
+    }).
      
     when('/monsterNation', {
      templateUrl: 'monsternation.html',
         controller: 'monsterNationCtrl'
-    }),
-       when('werewolf-landing',{
+    }).
+       when('/werewolf-landing',{
            templateUrl: 'mChat/werewolf-landing.html',
            controller: 'werewolf-landingCtrl'
-       }),
-        when('vampire-landing', {
+       }).
+        when('/vampire-landing', {
             templateUrl: 'mChat/vampire-landing.html',
             controller: 'vampire-landingCtrl'
-        }),
-        when('zombie-landing', {
+        }).
+        when('/zombie-landing', {
            templateUrl: 'mChat/zombie-landing.html',
            controller: 'zombie-landingCtrl'
         })

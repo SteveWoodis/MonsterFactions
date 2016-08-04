@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-controller="mainController">
-<nav>
+<div class="flex-container">
+    <nav>
     <div class="container-fluid">
         <div class="col-xs-12">
             <ul class="nav navbar-nav">
@@ -35,97 +36,31 @@
             </ul>
         </div>
     </div><!-- /.container-fluid -->
-</nav>
-<div class="flex-container">
-
-    <div class="banner">
-        <img src="../assets/images/landscape-1.jpg" class="banner-img">
-    </div>
-    <div class="most-popular-banner">
-        <p class="most-popular"><strong>UPCOMING FACTIONS</strong></p>
-    </div>
-    <div class="launching-pics">
-        <div class="werewolf">
-            <a href="/#/werewolf-landing"><img src="../assets/images/werewolf-artwork1.jpg"></a>
-        </div>
-        <div class="vampire">
-            <a href="/#/vampire-landing"><img src="../assets/images/vampire-pic.jpg"></a>
-        </div>
-        <div class="zombie">
-            <a href="/#/zombie-landing"><img src="../assets/images/zombie-pic2.jpg"></a>
-        </div>
-        <div class="symbol">
-            <a href=""><img src="../assets/images/monsterfactions-symbol.jpg"></a>
-        </div>
-    </div><!-- endl launching-pics -->
-    <div class="showall-banner">
-        <p class="showall"><strong>SHOW ALL FACTIONS</strong></p>
-    </div>
+    </nav>
     <div class="flex-row">
-        <div class="monster-points">
-
-            <ol>
-            <li class="monster-points-text"><strong>Monster Points</strong></li>
-            <li class="monster-points-text-heading">The Leaders for the week are ...</li>
-            <li class="monster-points-text-small">1.</li>
-            <li class="monster-points-text-small">2.</li>
-            <li class="monster-points-text-small">3.</li>
-            <li class="monster-points-text-small">4.</li>
-            </ol>
-        </div>
-        <div class="login-chat">
-            <ol>
-                <li class="chat-login-text"><strong>Chat Login</strong></li>
-                <li class="chat-login-text-heading">Click on the links below to join the chat room of your favorite monster.</li>
-            </ol>
-        </div>
-    </div><!-- end flex-row -->
-    <div class="monster-movies">
-              <img src="../assets/images/monster-mural.jpg" class="monster-mural">
+        <div class="viewer" ng-view></div>
     </div>
-    <div class="monster-products">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="spacer " style="height:76px;"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="side-spacer"></div>
-            <div class="monster-game">
-                <ol>
-                    <li class="monster-game-text"><h3>Monster Game</h3></li>
-                    <li class="monster-game-text-small">Click to play the fun new monster game with your neighbors.</li>
-                    <li class="monster-game-text-small">Start with your neighborhood. Then your zip code. And then ...</li>
-                </ol>
-            </div>
-            <div class="monster-gear">
-                <ol>
-                    <li class="monster-gear-text"><h3>Monster Gear</h3></li>
-                    <li class="monster-gear-text">Click to shop our online store for all the latest MonsterFaction styles.</li>
-                </ol>
-            </div>
-            <div class="monster-gallery">
-                <ol>
-                    <li class="monster-gallery-text"><h3>Monster Gallery</h3></li>
-                    <li class="monster-gallery-text">Click to view all the latest Monster Art. Or even submit one of your own works of art!</li>
-                </ol>
-            </div>
-            <div class="side-spacer"></div>
-        </div>
-    </div><!-- end monster-products -->
     <div class="flex-footer">
-        <ol>
-            <li>Site Map</li>
-            <li>Feedback</li>
-            <li>Guidelines/Policies</li>
-            <li>Vertical Line</li>
-            <li>Facebook Image</li>
-            <li>Twitter Image</li>
-            <li>Pinterest</li>
-        </ol>
-        <img src="../assets/images/monsterfactions-banner-footer.jpg">
-        <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <div class="footer-site-map">Site Map</div>
+                <div class="footer-feedback">Feedback</div>
+                <div class="footer-policies">Guidelines/Policies</div>
 
+            </div>
+            <div class="footer-spacer"></div>
+            <div class="footer-links-right">
+                <div class="facebook"><img src="../assets/images/facebook.png"></div>
+                <div class="twitter"><img src="../assets/images/twitter.png"></div>
+                <div class="pinterest"><img src="../assets/images/pinterest.png"></div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="../assets/images/monsterfactions-banner-footer.jpg">
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
+        </div>
     </div>
 </div><!-- end container -->
 <script language="javascript">

@@ -60,11 +60,11 @@ html, body{
     justify-content: center;
 }
 .showall-banner{
-    height:196px;
+    height:375px;
     width: 1405px;
     padding-top:2px;
     padding-bottom: 2px;
-    background-color: #7A6A38;
+    background-color: #f5e79e;
 }
 .showall {
     margin-left: 40px;
@@ -96,33 +96,40 @@ html, body{
 
 .werewolf{
 
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: inline-flex;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
     /*height: 370px;
      width: 657px;*/
 }
 .vampire{
 
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     /*height: 370px;
     width: 493px;*/
-    display: inline-flex;
+    display: inline-block;
 }
 .zombie{
 
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     /*height: 370px;
     width: 660px;*/
-    display: inline-flex;
+    display: inline-block;
+}
+.symbol {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
 }
 .login-chat {
     padding: 5px auto;
@@ -159,6 +166,12 @@ html, body{
     width:30%;
     display: inline-flex;
 }
+.monster-gallery-text-small {
+    display: block;
+    width: 100%;
+    font-family: Calibri;
+    font-size: 20px;
+}
 .monster-gear {
     height: 100%;
     width:30%;
@@ -169,10 +182,17 @@ html, body{
     width: 100%;
 
 }
-
+.monster-gear-text-small {
+    display: block;
+    width: 100%;
+    font-family: Calibri;
+    font-size: 20px;
+}
 .monster-game-text-small {
     display: block;
     width: 100%;
+    font-family: Calibri;
+    font-size: 20px;
 }
 .monster-points-text {
     display: block;
@@ -202,6 +222,12 @@ html, body{
 .monster-gear-text {
     display: block;
 }
+.monster-gear-text-small{
+    display: block;
+    width: 100%;
+    font-family: Calibri;
+    font-size: 20px;
+}
 .monster-gallery-text {
     display: block;
 }
@@ -230,12 +256,46 @@ html, body{
 
     -webkit-flex-flow: row wrap;
 }
-.flex-container-main {
+.flex-werewolf-main {
     padding: 0px auto;
     margin-left: 0px;
     list-style: none;
     height: 500px;
+    width: 1405px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction:column;
+    background: #ffffff;
+    justify-content: space-around;
 
+    -webkit-flex-flow: row wrap;
+}
+.flex-vampire-main {
+    padding: 0px auto;
+    margin-left: 0px;
+    list-style: none;
+    height: 500px;
+    width: 1405px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction:column;
+    background: #ffffff;
+    justify-content: space-around;
+
+    -webkit-flex-flow: row wrap;
+}
+.flex-zombie-main {
+    padding: 0px auto;
+    margin-left: 0px;
+    list-style: none;
+    height: 500px;
+    width: 1405px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -293,34 +353,43 @@ html, body{
     display: -webkit-flex;
     display: flex;
     background: #ffffff;
-    border-width: 2px;
-    border-style:solid;
-    border-color: #000;
     -webkit-flex-flow: row wrap;
 }
+
 .flex-footer {
     width: 1385px;
-    padding: 10px;
-    margin: 10px auto;
+    padding-top: 10px;
+    margin-top: 2px;
     list-style: none;
-    height:270px;
+    height:370px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    background-color: #999999;
+    -webkit-flex-flow: row wrap;
+
+}
+.flex-main-view {
+    padding: 5px auto;
+    margin: 5px auto;
+    list-style: none;
+    height: 1000px;
+    width: 1360px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    background-color: #999999;
+    background: #ffffff;
     -webkit-flex-flow: row wrap;
-    justify-content: space-around;
 }
 .flex-row {
-    padding: 0;
-    margin: 0 auto;
     width: 1405px;
     margin-left:0;
     margin-right: 0;
     list-style: none;
-    <!-- background-color: #000; -->
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -329,9 +398,9 @@ html, body{
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     font-size: 44px;
-    display: flex;
 
 }
+
 .flex-middle-row {
     padding: 0;
     margin: 0 auto;
@@ -346,9 +415,6 @@ html, body{
     display: -webkit-flex;
     display: flex;
     flex-direction:row;
-    border-width: 2px;
-    border-style:solid;
-    border-color: red;
     -webkit-flex-flow: row;
 
 }
@@ -418,6 +484,83 @@ html, body{
     margin-top: -30px;
     display: inline-block;
     
+}
+.footer-logo{
+    display: inline-block;
+    width:100%;
+    margin-left:45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-links {
+    display: inline-block;
+    width:100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.footer-spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.footer-copyright {
+    display: inline-block;
+    width:100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    font-family: Calibri;
+    font-size: 8px;
+}
+.footer-links-left {
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 5%;
+
+}
+.footer-links-right {
+
+    display: inline-block;
+    margin-right:20%;
+    margin-left: 5%;
+}
+.footer-site-map {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right:2px;
+    font-family: Calibri;
+    font-size: 18px;
+}
+.footer-feedback {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right:2px;
+    font-family: Calibri;
+    font-size: 18px;
+}
+.footer-policies {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right:2px;
+    font-family: Calibri;
+    font-size: 18px;
+}
+.facebook {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right:2px;
+}
+.twitter {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right:2px;
+}
+.pinterest {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right:2px;
+
 }
 .footer-inverse{
     height: 30px;
