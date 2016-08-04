@@ -5,7 +5,7 @@
     }
 }
 
-@font-face {
+/*@font-face {
     font-family: 'DarkCrystalScript';
     src: url('../fonts/DarkCrystalScript.eot');
     src: url('DarkCrystalScript.eot?#iefix') format('embedded-opentype'),
@@ -14,9 +14,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 html, body {
-    background: url('/assets/images/landscape.jpg');
+
     /*margin-top: 35px;*/
     height: 1280px;
     width: 100%;
@@ -32,9 +32,9 @@ html, body {
 }
 
 .spacer-font {
-    font-family: 'DarkCrystalScript', sans-serif;
+    font-family: 'Calibri';
     font-size: 21px;
-    color: red;
+    color: #000000;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -30px;
@@ -51,10 +51,19 @@ html, body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
-    background-color: #C6C6B1;
+    /*background-color: #C6C6B1;*/
     opacity: .9;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+    -webkit-flex-flow: row wrap;
 }
 
 .chat-container {
@@ -63,7 +72,7 @@ html, body {
 }
 
 .big-container {
-    background: url('/assets/images/landscape.jpg');
+
 
 }
 
@@ -78,7 +87,7 @@ html, body {
 }
 
 #getting_started {
-    background-color:;
+    background-color: #ffffff;
 }
 
 .brandP {
@@ -87,4 +96,19 @@ html, body {
 
 .padding-20 {
     padding: 20px;
+}
+.flex-footer {
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 2px;
+    list-style: none;
+    height:370px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    background-color: #999999;
+    -webkit-flex-flow: row wrap;
+
 }

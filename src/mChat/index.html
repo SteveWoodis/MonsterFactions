@@ -10,6 +10,15 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+      <link rel="stylesheet" href="styles/prettify.css">
+      <link rel="stylesheet" href="styles/flat-ui.css">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/main.css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/prettify.css">
@@ -20,44 +29,51 @@
   </head>
   <body ng-app="PubNubAngularApp">
     <div class="container">
-     <div class="row">
-        
-        <div class="container-fluid" >
-            <nav class="navbar navbar-inverse" class="row navigation">
-                <div class="container-fluid">
-                    <div class="col-xs-12">
-                        <ul class="nav navbar-nav">
-                            <li class="spacer"></li>
-                            <li class="spacer"></li>
-                            <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
-                            <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-                            <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li>
-                            <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
-                            <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
-                            <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
-                            <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
-                            <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
-                            <li><img src="../assets/images/monsterfactions-banner-mini.jpg"></li>
-                        </ul>
-                    </div>
-                </div><!-- /.container-fluid -->
-            </nav>
-        </div>
-     </div>
+        <nav>
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <ul class="nav navbar-nav">
+                        <li class="spacer"></li>
+                        <li class="spacer"></li>
+                        <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
+                        <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
+                        <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li>
+                        <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
+                        <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
+                        <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
+                        <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
+                        <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
+                        <li><img src="../assets/images/monsterfactions-banner-mini.jpg"></li>
+                    </ul>
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
 
      <div class="row">
         <div class="viewer" ng-view></div>
      </div>
-    <div class="row footer">
-        <div class="col-xs-6">
-            <p class="footer-info-left">All materials viewable on this site are copyrighted by the owner of the material</p>
-            <p class="footer-info-left"> Copyright &#169; 2015 MonsterFactions,Inc</p>
-            <p class="footer-info-right"><a href=""><img src="../assets/images/twitter.png" title="Follow us on Twitter" class="social"></a><a href=""><img src="../assets/images/facebook.png" title="Follow us on Facebook" class="social"></a><a href="http://www.pinterest.com/monster factions"><img src="../assets/images/pinterest.png" title="Follow us on Pinterest" class="social"></a></p>
-         </div>       
-        <div class="col-xs-6">
-           <p class="footer-info-right">Welcome to MonsterFactions. <a href="/src/login"><strong>Try Here</strong></a></p>
-         </div> 
-     </div>          
+        <div class="flex-footer">
+            <div class="footer-links">
+                <div class="footer-links-left">
+                    <div class="footer-site-map">Site Map</div>
+                    <div class="footer-feedback">Feedback</div>
+                    <div class="footer-policies">Guidelines/Policies</div>
+
+                </div>
+                <div class="footer-spacer"></div>
+                <div class="footer-links-right">
+                    <div class="facebook"><img src="../assets/images/facebook.png"></div>
+                    <div class="twitter"><img src="../assets/images/twitter.png"></div>
+                    <div class="pinterest"><img src="../assets/images/pinterest.png"></div>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="../assets/images/monsterfactions-banner-footer.jpg">
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
+            </div>
+        </div>
             
     
 </div>
