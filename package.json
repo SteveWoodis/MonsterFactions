@@ -4,7 +4,8 @@
   "description": "TrueTypeFont: Dark Crystal (Outline) Dennis Ludlow 2001 all rights reserved Sharkshock Productions maddhatter_dl@yahoo.com",
   "main": "js/app.js",
   "dependencies": {
-    "express": "4.13.4"
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
   },
   "devDependencies": {},
   "scripts": {
