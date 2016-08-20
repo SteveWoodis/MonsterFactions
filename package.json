@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "TrueTypeFont: Dark Crystal (Outline) Dennis Ludlow 2001 all rights reserved Sharkshock Productions maddhatter_dl@yahoo.com",
   "main": "js/app.js",
+  "engine": "4.2.2",
   "dependencies": {
     "bower": "^1.7.9",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "foreman": "1.4.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/SteveWoodis/MonsterFactions/issues"
   },
-  "homepage": "https://github.com/SteveWoodis/MonsterFactions#readme"
+  "homepage": "https://github.com/SteveWoodis/MonsterFactions#readme",
+  "scripts": {
+    "postinstall": "bower install"
+  }
 }
