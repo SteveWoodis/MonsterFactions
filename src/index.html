@@ -26,7 +26,22 @@
                 <li class="spacer"></li>
                 <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
                 <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-                <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li>
+
+                <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
+
+                <li class="spacer">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" value="Faction" data-toggle="dropdown" aria-haspopup="true">
+                            {{SelectedItem}}
+                            <span class="caret"></span>
+                            </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li ng-repeat="Monster in Factions"><a href="#">{{Monster}}</a></li>
+                        </ul>
+                    </div>
+                        </button>
+                    </li>
+
                 <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
                 <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
                 <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
