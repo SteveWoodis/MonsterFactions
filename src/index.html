@@ -29,18 +29,17 @@
 
                 <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
 
-                <li class="spacer">
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" value="Faction" data-toggle="dropdown" aria-haspopup="true">
-                            {{SelectedItem}}
-                            <span class="caret"></span>
-                            </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li ng-repeat="Monster in Factions"><a href="#">{{Monster}}</a></li>
+                    <!--  <ol id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle> -->
+                    <li uib-dropdown-toggle>  Factions <span class="caret"></span>
+                        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+                            <li role="menuitem"><a href="#/vampire-landing">Vampire</a></li>
+                            <li role="menuitem"><a href="#/werewolf-landing">Werewolf</a></li>
+                            <li role="menuitem"><a href="#/zombie-landing">Zombie</a></li>
+                            <li class="divider"></li>
+                            <li role="menuitem"><a href="#/suggestion-landing">Suggest a Faction!</a></li>
                         </ul>
-                    </div>
-                        </button>
                     </li>
+
 
                 <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
                 <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
@@ -125,13 +124,15 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="bower_components/pubnub/web/dist/pubnub.min.js"></script>
 <script src="bower_components/firebase/firebase.js"></script>
 <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
 
+
 <script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="js/ModalPopupWindow.js"></script>
 <script type="text/javascript" src="js/mainController.js"></script>
+<script type="text/javascript" src="js/ModalPopupWindow.js"></script>
 <script type="text/javascript" src="js/envService.js"></script>
 <script type="text/javascript" src="js/landingCtrl.js"></script>
 <script type="text/javascript" src="js/controller.js"></script>
@@ -153,6 +154,7 @@
 <script type="text/javascript" src="js/werewolf-landingCtrl.js"></script>
 <script type="text/javascript" src="js/vampire-landingCtrl.js"></script>
 <script type="text/javascript" src="js/zombie-landingCtrl.js"></script>
+<script type="text/javascript" src="js/suggestion-landingCtrl.js"></script>
 
 </body>
 </html>

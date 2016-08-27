@@ -1,4 +1,4 @@
-var app = angular.module('monsterApp', ['firebase', 'ngRoute', 'pubnub.angular.service', 'ui.bootstrap']);
+var app = angular.module('monsterApp', ['firebase', 'ngRoute', 'pubnub.angular.service', 'ui.bootstrap','ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 app.config(function($routeProvider){
     $routeProvider
     .when('/join', {
@@ -61,7 +61,11 @@ app.config(function($routeProvider){
         when('/zombie-landing', {
            templateUrl: 'mChat/zombie-landing.html',
            controller: 'zombie-landingCtrl'
-        })
+        }).
+        when('/suggestion-landing',{
+          templateUrl: 'mChat/suggestion-landing.html',
+          controller: 'suggestion-landingCtrl'
+    })
     .otherwise({
         redirectTo: '/landing'
     })
