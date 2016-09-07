@@ -19,37 +19,38 @@
 <body ng-controller="mainController">
 <div class="flex-container">
     <nav>
-    <div class="container-fluid">
-        <div class="col-xs-12">
-            <ul class="nav navbar-nav">
-                <li class="spacer"></li>
-                <li class="spacer"></li>
-                <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
-                <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
+      <div class="container-fluid">
+          <div class="col-xs-12">
+              <ul class="nav navbar-nav">
+                  <li class="spacer"></li>
+                  <li class="spacer"></li>
+                  <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
+                  <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
 
-                <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
+                  <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
 
-                    <!--  <ol id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle> -->
-                    <li uib-dropdown-toggle>  Factions <span class="caret"></span>
-                        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
-                            <li role="menuitem"><a href="#/vampire-landing">Vampire</a></li>
-                            <li role="menuitem"><a href="#/werewolf-landing">Werewolf</a></li>
-                            <li role="menuitem"><a href="#/zombie-landing">Zombie</a></li>
-                            <li class="divider"></li>
-                            <li role="menuitem"><a href="#/suggestion-landing">Suggest a Faction!</a></li>
-                        </ul>
-                    </li>
+                      <!--  <ol id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle> -->
+                  <li uib-dropdown-toggle>  Factions
+                      <span class="caret"></span>
+                      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+                          <li role="menuitem"><a href="#/vampire-landing">Vampire</a></li>
+                          <li role="menuitem"><a href="#/werewolf-landing">Werewolf</a></li>
+                          <li role="menuitem"><a href="#/zombie-landing">Zombie</a></li>
+                          <li class="divider"></li>
+                          <li role="menuitem"><a href="#/suggestion-landing">Suggest a Faction!</a></li>
+                      </ul>
+                  </li>
 
 
-                <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
-                <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
-                <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
-                <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
-                <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
-                <li><img src="../assets/images/monsterfactions-banner-mini.jpg"></li>
-            </ul>
-        </div>
-    </div><!-- /.container-fluid -->
+                  <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
+                  <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
+                  <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
+                  <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
+                  <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
+                  <li><img src="../assets/images/monsterfactions-banner-mini.jpg"></li>
+              </ul>
+          </div>
+      </div><!-- /.container-fluid -->
     </nav>
     <div class="flex-row">
         <div class="viewer" ng-view></div>
@@ -60,17 +61,16 @@
                 <div class="footer-site-map">Site Map</div>
                 <div class="footer-feedback">Feedback</div>
                 <div class="footer-policies">Guidelines/Policies</div>
-
             </div>
             <div class="footer-spacer"></div>
             <div class="footer-links-right">
-                <div class="facebook"><img src="../assets/images/facebook.png"></div>
-                <div class="twitter"><img src="../assets/images/twitter.png"></div>
-                <div class="pinterest"><img src="../assets/images/pinterest.png"></div>
+                <div class="facebook"><img src="../assets/images/facebook.png" /></div>
+                <div class="twitter"><img src="../assets/images/twitter.png" /></div>
+                <div class="pinterest"><img src="../assets/images/pinterest.png" /></div>
             </div>
         </div>
         <div class="footer-logo">
-            <img src="../assets/images/monsterfactions-banner-footer.jpg">
+            <img src="../assets/images/monsterfactions-banner-footer.jpg" />
         </div>
         <div class="footer-copyright">
             <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
@@ -128,6 +128,8 @@
 <script src="bower_components/pubnub/web/dist/pubnub.min.js"></script>
 <script src="bower_components/firebase/firebase.js"></script>
 <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 
 
 <script type="text/javascript" src="app.js"></script>
