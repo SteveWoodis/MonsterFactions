@@ -1,70 +1,54 @@
 var app = angular.module('monsterApp');
-app.controller('loginController',function($scope, envService, $location){
-	  $scope.User = {};
-      $scope.logMeIn = function(){
-        var User = $scope.User;
-		envService.authUserName(User).then(function(res){
-         
-        })
-        $scope.reg_email = '';
-        $scope.reg_password = '';
-		
-	}
-    $scope.registerMe = function(){
-      $location.path('/registration'); 
-        
+app.controller('loginCtrl', function($scope, $http, $location){
+
+    var found_user;
+    $scope.user = {
+        email:"",
+        password:""
+    };
+    console.log('You made it to loginCtrl');
+
+    var refresh = function(){
+        $scope.user.email = "";
+        $scope.user.password = "";
+
+    };
+    var refreshReg = function(){
+        $scope.contact.email = "";
+        $scope.contact.password = "";
+
+    };
+    refresh();
+
+    var user ;
+
+
+    $scope.login = login;
+    $scope.Register = Register;
+
+    function login(user){
+        var data = "";
+
+        $http.get('/customers/'+ user.email).success(function(response){
+            data = response;
+
+            if(user.email === data.email){
+                console.log('Success!')
+                $location.path('/content_creator');
+            }
+            else
+            {
+                throw Error('Sorry!');
+            }
+            refresh();
+        });
+
+    }//end of login function
+
+    function Register(){
+        $location.path('/register');
     }
 
 
-});
-app.controller('ModalDemoCtrl', function ($scope, $uibModal, $log) {
-
-    $scope.items = ['item1', 'item2', 'item3'];
-
-    $scope.animationsEnabled = true;
-
-    $scope.open = function (size) {
-
-        var modalInstance = $uibModal.open({
-            animation: $scope.animationsEnabled,
-            templateUrl: 'login.html',
-            controller: 'ModalInstanceCtrl',
-            size: size,
-            resolve: {
-                items: function () {
-                    return $scope.items;
-                }
-            }
-        });
-
-        modalInstance.result.then(function (selectedItem) {
-            $scope.selected = selectedItem;
-        }, function () {
-            $log.info('Modal dismissed at: ' + new Date());
-        });
-    };
-
-    $scope.toggleAnimation = function () {
-        $scope.animationsEnabled = !$scope.animationsEnabled;
-    };
-
-});
-
-// Please note that $uibModalInstance represents a modal window (instance) dependency.
-// It is not the same as the $uibModal service used above.
-
-app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
-
-    $scope.items = items;
-    $scope.selected = {
-        item: $scope.items[0]
-    };
-
-    $scope.ok = function () {
-        $uibModalInstance.close($scope.selected.item);
-    };
-
-    $scope.cancel = function () {
-        $uibModalInstance.dismiss('cancel');
-    };
-});
+})
+//fixed loginCtrl on 3/26/16

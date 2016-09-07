@@ -1,23 +1,16 @@
-var app = angular.module('monsterApp', ['firebase', 'ngRoute', 'pubnub.angular.service', 'ui.bootstrap','ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+var app = angular.module('monsterApp',['ngRoute', 'pubnub.angular.service', 'ngAnimate','ngSanitize','ui.bootstrap']);
 app.config(function($routeProvider){
     $routeProvider
-    .when('/join', {
-      templateUrl: '/src/mChat/views/join.html',
-      controller: 'JoinCtrl'
-    }).when('/chat', {
-      templateUrl: '/src/mChat/views/chat.html',
-      controller: 'ChatCtrl'
-    })
     .when('/landing', {
         templateUrl: 'landing.html',
         controller: 'landingCtrl'
     })
     .when('/login', {
         templateUrl: 'login/login.html',
-        controller: 'loginController'
+        controller: 'loginCtrl'
     })
     .when('/registration', {
-        templateUrl: '/src/login/contractorRegistration.html',
+        templateUrl: 'login/contractorRegistration.html',
         controller: 'conRegController'
     })
     .when('/Gallery', {
@@ -25,46 +18,38 @@ app.config(function($routeProvider){
         controller: 'mGalleryCtrl'
     })
     .when('/Contact', {
-     templateUrl: '/contactus.html',
+        templateUrl: 'contactus.html',
         controller: 'contactCtrl'
-        // resolve: {
-        //    getProjectsRef: function (gprojectService) {
-        //     return gprojectService.getProjects();
-        //     }
-        // }
-    }).
-      when('/store', {
+    }).when('/join', {
+        templateUrl: 'mChat/views/join.html',
+        controller: 'JoinCtrl'
+        }).when('/chat', {
+        templateUrl: 'mChat/views/chat.html',
+        controller: 'ChatCtrl'
+    }).when('/store', {
         templateUrl: 'partials/store.htm',
-        controller: storeController 
-      }).
-      when('/products/:productSku', {
+        controller: 'storeController'
+    }).when('/products/:productSku', {
         templateUrl: 'partials/product.htm',
-        controller: storeController
-    }).
-    when('/cart', {
+        controller: 'storeController'
+    }).when('/cart', {
         templateUrl: 'partials/shoppingCart.htm',
-        controller: storeController
-    }).
-     
-    when('/monsterNation', {
-     templateUrl: 'monsternation.html',
+        controller: 'storeController'
+    }).when('/monsterNation', {
+        templateUrl: 'monsternation.html',
         controller: 'monsterNationCtrl'
-    }).
-       when('/werewolf-landing',{
-           templateUrl: 'mChat/werewolf-landing.html',
-           controller: 'werewolf-landingCtrl'
-       }).
-        when('/vampire-landing', {
-            templateUrl: 'mChat/vampire-landing.html',
-            controller: 'vampire-landingCtrl'
-        }).
-        when('/zombie-landing', {
-           templateUrl: 'mChat/zombie-landing.html',
-           controller: 'zombie-landingCtrl'
-        }).
-        when('/suggestion-landing',{
-          templateUrl: 'mChat/suggestion-landing.html',
-          controller: 'suggestion-landingCtrl'
+    }).when('/werewolf-landing',{
+        templateUrl: 'mChat/werewolf-landing.html',
+        controller: 'werewolf-landingCtrl'
+    }).when('/vampire-landing', {
+        templateUrl: 'mChat/vampire-landing.html',
+        controller: 'vampire-landingCtrl'
+    }).when('/zombie-landing', {
+        templateUrl: 'mChat/zombie-landing.html',
+        controller: 'zombie-landingCtrl'
+    }).when('/suggestion-landing',{
+        templateUrl: 'mChat/suggestion-landing.html',
+        controller: 'suggestion-landingCtrl'
     })
     .otherwise({
         redirectTo: '/landing'
@@ -93,4 +78,5 @@ app.factory("DataService", function () {
         store: myStore,
         cart: myCart
     };
+    
 });
