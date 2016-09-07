@@ -1,4 +1,4 @@
-var app = angular.module('monsterApp',[]);
+var app = angular.module('monsterApp');
 app.controller('mainController', function($scope, $log){
    $scope.items = [
       'Vampire',
