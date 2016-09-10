@@ -1,5 +1,5 @@
 var app = angular.module('monsterApp');
-app.controller('conRegController', function($scope, $location, envService){
+app.controller('RegController', function($scope, $location, envService){
     $scope.User = {};
    
    
