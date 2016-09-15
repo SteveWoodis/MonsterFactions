@@ -9,6 +9,10 @@ app.config(function($routeProvider){
         templateUrl: 'login/login.html',
         controller: 'loginCtrl'
     })
+    .when('/profile', {
+        templateUrl: 'profile.html',
+        controller: 'profileCtrl'
+        })
     .when('/register', {
         templateUrl: 'login/Registration.html',
         controller: 'RegController'
@@ -16,6 +20,10 @@ app.config(function($routeProvider){
     .when('/Gallery', {
         templateUrl: 'mGallery.html',
         controller: 'mGalleryCtrl'
+    })
+    .when('/Game', {
+        templateUrl: 'monster-game.html',
+        controller: 'gameCtrl'
     })
     .when('/Contact', {
         templateUrl: 'contactus.html',
@@ -28,13 +36,13 @@ app.config(function($routeProvider){
         controller: 'ChatCtrl'
     }).when('/store', {
         templateUrl: 'partials/store.htm',
-        controller: 'storeController'
+        controller: storeController
     }).when('/products/:productSku', {
         templateUrl: 'partials/product.htm',
-        controller: 'storeController'
+        controller: storeController
     }).when('/cart', {
         templateUrl: 'partials/shoppingCart.htm',
-        controller: 'storeController'
+        controller: storeController
     }).when('/monsterNation', {
         templateUrl: 'monsternation.html',
         controller: 'monsterNationCtrl'

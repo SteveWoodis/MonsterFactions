@@ -34,7 +34,7 @@ app.controller('loginCtrl', function($scope, $http, $location){
 
             if(user.email === data.email){
                 console.log('Success!')
-                $location.path('/content_creator');
+               
             }
             else
             {

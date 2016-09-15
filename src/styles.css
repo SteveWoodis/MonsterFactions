@@ -77,7 +77,7 @@ html, body{
     padding: 5px auto;
     margin: 5px auto;
     display: inline-flex;
-    height: 250px;
+    height: 350px;
     width:50%;
 }
 .launching-pics {
@@ -201,9 +201,10 @@ html, body{
     font-size: 44px;
 }
 .monster-points-text-small {
-    display: block;
+    display: inline-flex;
     width:100%;
     font-size: 16px;
+    justify-content: space-around;
 }
 .monster-points-text-heading {
     display: block;
