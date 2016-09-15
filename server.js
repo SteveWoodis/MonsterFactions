@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/src'));
 app.use(bodyParser.json());
 
-app.get('/customers/:email', function (req, res) {
+/*app.get('/customers/:email', function (req, res) {
     console.log('Hello World I received a GET request!');
     db.factiondb.findOne({email:req.params.email},function(err, docs) {
       console.log(docs);
@@ -22,7 +22,7 @@ app.post('/factiondb', function(req, res){
     res.json(doc);
   })
 });
-
+*/
 app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port ' + port + '!');
 });
