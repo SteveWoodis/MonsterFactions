@@ -1,11 +1,11 @@
 var express = require('express');
 var app = express();
-var mongojs = require('mongojs');
+/*var mongojs = require('mongojs');
 var db = mongojs('factiondb', ['customers']);
 var bodyParser = require('body-parser');
-
+*/
 app.use(express.static(__dirname + '/src'));
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 
 /*app.get('/customers/:email', function (req, res) {
     console.log('Hello World I received a GET request!');
@@ -23,7 +23,7 @@ app.post('/factiondb', function(req, res){
   })
 });
 */
+var port = 3000;
 app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port ' + port + '!');
 });
-var port = 3000;
