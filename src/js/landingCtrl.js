@@ -9,9 +9,5 @@ app.controller('landingCtrl', function($scope){
     {name: 'Jesse',
      points: '63'}
     ]
-    $scope.Factions = [
-        {name: 'Werewolf'},
-        {name: 'Vampire'},
-        {name: 'Zombie'}
-    ]
+   
 })

@@ -140,6 +140,14 @@ html, body{
     width:50%;
     justify-content: center;
 }
+.weekly-special-section {
+    padding: 5px auto;
+    margin: 5px auto;
+    display: inline-flex;
+    height: 250px;
+    width:50%;
+    justify-content: center;
+}
 .monster-movies {
     height:470px;
     width: 1405px;
@@ -215,6 +223,13 @@ html, body{
     display: block;
     width: 100%;
     font-size: 44px;
+}
+.chat-login-text-small {
+    font-size: 24px;
+    padding-left: 10px;
+}
+.chat-list {
+    list-style-type: none;
 }
 .chat-login-text-heading {
     display: block;

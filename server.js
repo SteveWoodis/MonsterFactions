@@ -1,29 +1,13 @@
 var express = require('express');
 var app = express();
-/*var mongojs = require('mongojs');
-var db = mongojs('factiondb', ['customers']);
 var bodyParser = require('body-parser');
-*/
-app.use(express.static(__dirname + '/src'));
-//app.use(bodyParser.json());
+var Customer = require('./src/Customer/Customer.controller');
+app.use(bodyParser.json());
+app.set('port', (process.env.PORT || 3000));
+app.use('/',express.static(__dirname + '/src'));
+app.use('/api/customer', Customer);
 
-/*app.get('/customers/:email', function (req, res) {
-    console.log('Hello World I received a GET request!');
-    db.factiondb.findOne({email:req.params.email},function(err, docs) {
-      console.log(docs);
 
-      res.send(JSON.stringify(docs));
-    })
-});
-  
-app.post('/factiondb', function(req, res){
-  console.log(req.body);
-  db.customers.insert(req.body, function(err,doc){
-    res.json(doc);
-  })
-});
-*/
-var port = 3000;
-app.listen(process.env.PORT || 3000, function () {
+app.listen(app.get('port'), function () {
   console.log('Example app listening on port ' + port + '!');
 });
