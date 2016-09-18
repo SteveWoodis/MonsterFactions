@@ -1,5 +1,5 @@
 var express = require('express');
-var Customer = require( './Customer.db');
+var Customer = require( './Customer.db.js');
 
 const router = express.Router({
   mergeParams: true

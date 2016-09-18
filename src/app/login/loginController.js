@@ -29,7 +29,7 @@ app.controller('loginCtrl', function($scope, $http, $location){
     function login(user){
         var data = "";
 
-        $http.get('/customers/'+ user.email).success(function(response){
+        $http.get('/customer/'+ user.email).success(function(response){
             data = response;
 
             if(user.email === data.email){
