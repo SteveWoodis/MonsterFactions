@@ -1,5 +1,5 @@
 var app = angular.module('monsterApp');
-app.controller('aboutUsCtrl', function($scope){
-    
-    
+app.controller('aboutUsCtrl', function ($scope) {
+
+
 })

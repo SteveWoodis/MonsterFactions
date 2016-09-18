@@ -1,5 +1,5 @@
 var app = angular.module('monsterApp');
-app.controller('profileCtrl', function($scope){
+app.controller('profileCtrl', function ($scope) {
 
 
-})
+});

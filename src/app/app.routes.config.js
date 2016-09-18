@@ -1,3 +1,5 @@
+import storeController from './js/controller.js';
+
 export default function ($routeProvider) {
   $routeProvider
       .when('/landing', {

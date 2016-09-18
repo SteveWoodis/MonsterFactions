@@ -1,5 +1,5 @@
 var app = angular.module('monsterApp');
-app.controller('mGalleryCtrl', function($scope){
+app.controller('mGalleryCtrl', function ($scope) {
 
 
-})
+});
