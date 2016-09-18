@@ -1,121 +1,118 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>MonsterChat</title>
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>MonsterChat</title>
+  <meta name="viewport" content="width=device-width">
 
-    <script src="https://cdn.pubnub.com/pubnub.min.js"></script>
-    <script src="https://cdn.pubnub.com/pubnub-crypto.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+  <link rel="stylesheet" href="mChat.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/prettify.css">
+  <link rel="stylesheet" href="styles/flat-ui.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <!-- endbuild -->
+</head>
+<body ng-app="PubNubAngularApp">
+<div class="container">
+  <nav>
+    <div class="container-fluid">
+      <div class="col-xs-12">
+        <ul class="nav navbar-nav">
+          <li class="spacer"></li>
+          <li class="spacer"></li>
+          <li><img src="../../assets/images/monsterfactions-symbol-mini.jpg"></li>
+          <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
+          <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li>
+          <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
+          <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
+          <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
+          <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
+          <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
+          <li><img src="../../assets/images/monsterfactions-banner-mini.jpg"></li>
+        </ul>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
 
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <div class="row">
+    <div class="viewer" ng-view></div>
+  </div>
+  <div class="flex-footer">
+    <div class="footer-links">
+      <div class="footer-links-left">
+        <div class="footer-site-map">Site Map</div>
+        <div class="footer-feedback">Feedback</div>
+        <div class="footer-policies">Guidelines/Policies</div>
 
-      <link rel="stylesheet" href="styles/prettify.css">
-      <link rel="stylesheet" href="styles/flat-ui.css">
-      <link rel="stylesheet" href="mChat.css">
-      <link rel="stylesheet" href="styles/style.css">
-      <link rel="stylesheet" href="styles/main.css">
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/prettify.css">
-    <link rel="stylesheet" href="styles/flat-ui.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="PubNubAngularApp">
-    <div class="container">
-        <nav>
-            <div class="container-fluid">
-                <div class="col-xs-12">
-                    <ul class="nav navbar-nav">
-                        <li class="spacer"></li>
-                        <li class="spacer"></li>
-                        <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
-                        <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-                        <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li>
-                        <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
-                        <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
-                        <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
-                        <li class="spacer"><a href="/#/Contact" class="spacer-font">Contact</a></li>
-                        <li class="spacer"><a href="/#/login" class="spacer-font"> Login/Register</a></li>
-                        <li><img src="../assets/images/monsterfactions-banner-mini.jpg"></li>
-                    </ul>
-                </div>
-            </div><!-- /.container-fluid -->
-        </nav>
+      </div>
+      <div class="footer-spacer"></div>
+      <div class="footer-links-right">
+        <div class="facebook"><img src="../../assets/images/facebook.png"></div>
+        <div class="twitter"><img src="../../assets/images/twitter.png"></div>
+        <div class="pinterest"><img src="../../assets/images/pinterest.png"></div>
+      </div>
+    </div>
+    <div class="footer-logo">
+      <img src="../../assets/images/monsterfactions-banner-footer.jpg">
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
+    </div>
+  </div>
 
-     <div class="row">
-        <div class="viewer" ng-view></div>
-     </div>
-        <div class="flex-footer">
-            <div class="footer-links">
-                <div class="footer-links-left">
-                    <div class="footer-site-map">Site Map</div>
-                    <div class="footer-feedback">Feedback</div>
-                    <div class="footer-policies">Guidelines/Policies</div>
 
-                </div>
-                <div class="footer-spacer"></div>
-                <div class="footer-links-right">
-                    <div class="facebook"><img src="../assets/images/facebook.png"></div>
-                    <div class="twitter"><img src="../assets/images/twitter.png"></div>
-                    <div class="pinterest"><img src="../assets/images/pinterest.png"></div>
-                </div>
-            </div>
-            <div class="footer-logo">
-                <img src="../assets/images/monsterfactions-banner-footer.jpg">
-            </div>
-            <div class="footer-copyright">
-                <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
-            </div>
-        </div>
-            
-    
 </div>
 
 
-    <!-- build:js(.tmp) scripts/scripts.js -->
-    <script src="scripts/pubnub-angular.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+<!-- build:js(.tmp) scripts/scripts.js -->
+<script src="scripts/pubnub-angular.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
 
-    <!-- endbuild -->
+<!-- endbuild -->
 
-    <script language="javascript">
-      window.scrl2 = function(el) {
-        if (!$(el)[0]) {
-          return;
-        }
-        $('html, body').animate({
-          scrollTop: $(el).offset().top
-        }, 600);
-      }
-    </script>
+<script language="javascript">
+  window.scrl2 = function (el) {
+    if (!$(el)[0]) {
+      return;
+    }
+    $('html, body').animate({
+      scrollTop: $(el).offset().top
+    }, 600);
+  }
+</script>
 
-    <script>
-    piAId='29622';
-    piCId='23596';
-    (function(){
-    function async_load(){
-    var s=document.createElement('script');s.type='text/javascript';
-    s.src=('https:'==document.location.protocol?'https://pi':'http://cdn')
-    +'.pardot.com/pd.js';
-    var c=document.getElementsByTagName('script')[0];
-    c.parentNode.insertBefore(s,c);}
-    if(window.attachEvent){window.attachEvent('onload',async_load);}
-    else{window.addEventListener('load',async_load,false);}})();
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create','UA-16927549-1');
-    ga('send','pageview');
-    </script>
+<script>
+  piAId = '29622';
+  piCId = '23596';
+  (function () {
+    function async_load() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn')
+        + '.pardot.com/pd.js';
+      var c = document.getElementsByTagName('script')[0];
+      c.parentNode.insertBefore(s, c);
+    }
 
-  </body>
+    if (window.attachEvent) {window.attachEvent('onload', async_load);}
+    else {window.addEventListener('load', async_load, false);}
+  })();
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-16927549-1');
+  ga('send', 'pageview');
+</script>
+
+</body>
 </html>

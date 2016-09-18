@@ -36,7 +36,8 @@ import './js/profileCtrl.js';
 
 import routes from './app.routes.config.js';
 
-angular.module('monsterApp', [
+angular.module('monsterApp',
+  [
     'ngRoute',
     'pubnub.angular.service',
     'ngAnimate',

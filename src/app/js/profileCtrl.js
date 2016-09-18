@@ -1,5 +1,3 @@
-var app = angular.module('monsterApp');
-app.controller('profileCtrl', function ($scope) {
-
+angular.module('monsterApp').controller('profileCtrl', function (/*$scope*/) {
 
 });

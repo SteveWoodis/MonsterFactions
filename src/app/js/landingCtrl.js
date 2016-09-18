@@ -1,6 +1,4 @@
-var app = angular.module('monsterApp');
-app.controller('landingCtrl', function ($scope) {
-  console.log('Made it to landingCtrl');
+angular.module('monsterApp').controller('landingCtrl', function ($scope) {
   $scope.pointLeader = [
     {
       name: 'Steve Woodis',
@@ -14,6 +12,5 @@ app.controller('landingCtrl', function ($scope) {
       name: 'Jesse',
       points: '63'
     }
-  ]
-
+  ];
 });

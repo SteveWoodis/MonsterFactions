@@ -1,4 +1,3 @@
-var app = angular.module('monsterApp');
-app.controller('suggestion-landingCtrl', function ($scope) {
+angular.module('monsterApp').controller('suggestion-landingCtrl', function (/*$scope*/) {
 
 });

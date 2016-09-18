@@ -1,5 +1,3 @@
-var app = angular.module('monsterApp');
-app.controller('aboutUsCtrl', function ($scope) {
+angular.module('monsterApp').controller('aboutUsCtrl', function (/*$scope*/) {
 
-
-})
+});

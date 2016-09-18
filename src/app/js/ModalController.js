@@ -1,4 +1,3 @@
-var app = angular.module('monsterApp');
-app.controller('ModalController', function ($scope) {
+angular.module('monsterApp').controller('ModalController', function (/*$scope*/) {
   console.log('Modal Controller');
 });

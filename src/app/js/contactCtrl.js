@@ -1,4 +1,3 @@
-var app = angular.module('monsterApp');
-app.controller('contactCtrl', function ($scope) {
+angular.module('monsterApp').controller('contactCtrl', function (/*$scope*/) {
 
 });

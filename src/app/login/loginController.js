@@ -1,37 +1,25 @@
-var app = angular.module('monsterApp');
-app.controller('loginCtrl', function ($scope, $http, $location) {
-
+angular.module('monsterApp').controller('loginCtrl', function ($scope, $http, $location) {
 
   $scope.user = {
-    email: "",
-    password: ""
+    email: '',
+    password:''
   };
-  console.log('You made it to loginCtrl');
 
-  var refresh = function () {
-    $scope.user.email = "";
-    $scope.user.password = "";
-
-  };
-  var refreshReg = function () {
-    $scope.contact.email = "";
-    $scope.contact.password = "";
+  const refresh = function () {
+    $scope.user.email = '';
+    $scope.user.password = '';
 
   };
+
   refresh();
 
   $scope.login = login;
   $scope.Register = Register;
 
   function login(user) {
-    var data = "";
-
-    $http.get('/customer/' + user.email).success(function (response) {
-      data = response;
-
+    $http.get('/customer/' + user.email).success(function (data) {
       if (user.email === data.email) {
         console.log('Success!');
-
       }
       else {
         throw Error('Sorry!');
@@ -39,12 +27,10 @@ app.controller('loginCtrl', function ($scope, $http, $location) {
       refresh();
     });
 
-  }//end of login function
+  }
 
   function Register() {
     $location.path('/register');
   }
 
-
-})
-//fixed loginCtrl on 3/26/16
+});

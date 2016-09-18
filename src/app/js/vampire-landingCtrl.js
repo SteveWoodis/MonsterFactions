@@ -1,4 +1,3 @@
-var app = angular.module('monsterApp');
-app.controller('vampire-landingCtrl', function ($scope) {
+angular.module('monsterApp').controller('vampire-landingCtrl', function (/*$scope*/) {
 
 });
