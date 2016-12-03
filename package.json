@@ -36,7 +36,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "postinstall": "bower install"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
