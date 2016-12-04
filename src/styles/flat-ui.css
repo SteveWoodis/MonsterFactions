@@ -1,16 +1,13 @@
 @font-face {
   font-family: "Flat-UI-Icons";
-  src: url("../src/fonts/Flat-UI-Icons.eot");
-  src: url("../src/fonts/Flat-UI-Icons.eot?#iefix") format("embedded-opentype"), url("../src/fonts/Flat-UI-Icons.woff") format("woff"), url("../src/fonts/Flat-UI-Icons.ttf") format("truetype"), url("../src/fonts/Flat-UI-Icons.svg#Flat-UI-Icons") format("svg");
+  src: url("../../public/assets/fonts/Flat-UI-Icons.eot");
+  src: url("../../public/assets/fonts/Flat-UI-Icons.eot?#iefix") format("embedded-opentype"), url("../../public/assets/fonts/Flat-UI-Icons.woff") format("woff"), url("../../public/assets/fonts/Flat-UI-Icons.ttf") format("truetype"), url("../../public/assets/fonts/Flat-UI-Icons.svg#Flat-UI-Icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
     font-family: 'DarkCrystalScript';
-    src: url('../src/fonts/DarkCrystalScript.eot');
-    src: url('DarkCrystalScript.eot?#iefix') format('embedded-opentype'),
-    url('../src/fonts/DarkCrystalScript.ttf') format('truetype'),
-    url('DarkCrystalScript-webfont.svg#FontName') format('svg');
+    src: url('../../public/assets/fonts/DarkCrystalScript.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -459,10 +456,7 @@ small,
 }
 @font-face {
     font-family: 'DarkCrystalScript';
-    src: url('DarkCrystalScript.eot');
-    src: url('DarkCrystalScript.eot?#iefix') format('embedded-opentype'),
-    url('DarkCrystalScript.ttf') format('truetype'),
-    url('DarkCrystalScript-webfont.svg#FontName') format('svg');
+    src: url('../../public/assets/fonts/DarkCrystalScript.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -3229,7 +3223,7 @@ fieldset[disabled] .input-group .input-group-btn:first-child .btn-default.active
 .pagination ul li.next > span {
   border-right: 2px solid #e4e7ea;
   font-size: 16px;
-  min-width: auto;
+  min-width: inherit;
   padding: 12px 17px;
 }
 .pagination ul li.next > a,
@@ -4232,7 +4226,7 @@ a.list-group-item.active > .badge,
 @media (max-width: 480px) {
   .alert .btn {
     display: block;
-    min-width: auto;
+    min-width: inherit;
     margin-bottom: 10px;
     margin-right: -15px;
   }
@@ -4767,7 +4761,7 @@ a.list-group-item.active > .badge,
   right: 20px;
   text-align: center;
   top: -2px;
-  -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: inherit;
 }
 .iconbar-success {
   background-color: #2ecc71;
@@ -5008,7 +5002,7 @@ a.list-group-item.active > .badge,
   .dialog .btn {
     display: block;
     margin: 9px 0;
-    min-width: auto;
+    min-width: inherit;
     width: 100%;
   }
   .dialog form .btn:last-child,
@@ -5043,7 +5037,6 @@ a.list-group-item.active > .badge,
   border: 2px solid #ebedef;
   border-radius: 7px;
   -webkit-background-clip: border-box;
-  -moz-background-clip: border-box;
   background-clip: border-box;
   -webkit-box-shadow: -14px 14px 0 0 rgba(0, 0, 0, 0.35);
   box-shadow: -14px 14px 0 0 rgba(0, 0, 0, 0.35);
@@ -5095,7 +5088,7 @@ a.list-group-item.active > .badge,
 @media (max-width: 480px) {
   .modal-footer .btn {
     display: block;
-    min-width: auto;
+    min-width: inherit;
     margin-bottom: 15px;
   }
   .modal-footer .btn:last-child {
@@ -5128,8 +5121,8 @@ a.list-group-item.active > .badge,
   position: relative;
   text-align: left;
   width: 80px;
-  -webkit-mask: url('../src/images/switch/mask.png') 0 0 no-repeat;
-  mask: url('../src/images/switch/mask.png') 0 0 no-repeat;
+  -webkit-mask: url('../../public/assets/images/switch/mask.png') 0 0 no-repeat;
+  mask: url('../../public/assets/images/switch/mask.png') 0 0 no-repeat;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5220,8 +5213,8 @@ a.list-group-item.active > .badge,
 }
 .switch-square {
   border-radius: 6px;
-  -webkit-mask: url('../src/images/switch/mask.png') 0 0 no-repeat;
-  mask: url('../src/images/switch/mask.png') 0 0 no-repeat;
+  -webkit-mask: url('../../public/assets/images/switch/mask.png') 0 0 no-repeat;
+  mask: url('../../public/assets/images/switch/mask.png') 0 0 no-repeat;
 }
 .switch-square > div.switch-off label {
   border-color: #7f8c9a;

@@ -1,13 +1,15 @@
-var express = require('express');
+/* global process */
+
+import express from 'express';
+import bodyParser from 'body-parser';
+import Customer from './Customer/Customer.controller';
 var app = express();
-var bodyParser = require('body-parser');
-var Customer = require('./src/Customer/Customer.controller');
 app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 3000));
 app.use('/',express.static(__dirname + '/src'));
 app.use('/api/customer', Customer);
 
 
-app.listen(app.get('port'), function () {
+app.listen(app.get('port'), () => {
   console.log('Example app listening on port ' + app.get('port') + '!');
 });
