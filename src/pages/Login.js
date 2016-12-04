@@ -11,19 +11,18 @@ const Login = () => {
   return (
     <div className="content flex-row space-around">
       <Paper style={style} zDepth={1}>
-        <div className="flex-row" style={{width: '100%'}}>
-          <TextField
-            hintText="Hint Text"
-            floatingLabelText="Username"
-          /><br />
-          <TextField
-            style={{width: '50%'}}
-            type="password"
-            hintText="Hint Text"
-            floatingLabelText="Password"
-            errorText="This field is required."
-          /><br />
-        </div>
+        <TextField
+          fullWidth
+          hintText="Hint Text"
+          floatingLabelText="Username"
+        /><br />
+        <TextField
+          fullWidth
+          type="password"
+          hintText="Hint Text"
+          floatingLabelText="Password"
+          errorText="This field is required."
+        /><br />
         <FlatButton label="Login"/>
         <p>Don't have an account? <Link to="/register">Register</Link></p>
       </Paper>
