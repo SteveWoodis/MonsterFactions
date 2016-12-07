@@ -29,15 +29,8 @@
                   <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
 
                       <!--  <ol id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle> -->
-                  <li class="uib-dropdown-toggle" id="DropDownMenu1" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true">  Factions
-                      <ul class="dropdown-menu"  aria-labelledby="dropDownMenu1">
-                          <li ng-repeat="item in items"><a href="#">{{item}}a>li>
-                          <!--<li role="menuitem"><a href="#/vampire-landing">Vampire</a></li>-->
-                          <!--<li role="menuitem"><a href="#/werewolf-landing">Werewolf</a></li>-->
-                          <!--<li role="menuitem"><a href="#/zombie-landing">Zombie</a></li>-->
-                          <!--<li class="divider"></li>-->
-                          <!--<li role="menuitem"><a href="#/suggestion-landing">Suggest a Faction!</a></li>-->
-                      </ul>
+                  <li class="uib-dropdown-toggle" id="DropDownMenu1" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true">Factions
+                     <li ng-repeat="item in items"><a ng-click="dropboxitemselected()">{{item}}</a></li>
                   </li>
 
 
