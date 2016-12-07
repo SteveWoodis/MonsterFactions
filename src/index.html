@@ -2,17 +2,16 @@
 <html ng-app="monsterApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MonsterFactions</title>
-
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="styles/prettify.css">
     <link rel="stylesheet" href="styles/flat-ui.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -30,13 +29,14 @@
                   <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
 
                       <!--  <ol id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle> -->
-                  <li uib-dropdown-toggle>  Factions
-                      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
-                          <li role="menuitem"><a href="#/vampire-landing">Vampire</a></li>
-                          <li role="menuitem"><a href="#/werewolf-landing">Werewolf</a></li>
-                          <li role="menuitem"><a href="#/zombie-landing">Zombie</a></li>
-                          <li class="divider"></li>
-                          <li role="menuitem"><a href="#/suggestion-landing">Suggest a Faction!</a></li>
+                  <li class="uib-dropdown-toggle" id="DropDownMenu1" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true">  Factions
+                      <ul class="dropdown-menu"  aria-labelledby="dropDownMenu1">
+                          <li ng-repeat="item in items"><a href="#">{{item}}a>li>
+                          <!--<li role="menuitem"><a href="#/vampire-landing">Vampire</a></li>-->
+                          <!--<li role="menuitem"><a href="#/werewolf-landing">Werewolf</a></li>-->
+                          <!--<li role="menuitem"><a href="#/zombie-landing">Zombie</a></li>-->
+                          <!--<li class="divider"></li>-->
+                          <!--<li role="menuitem"><a href="#/suggestion-landing">Suggest a Faction!</a></li>-->
                       </ul>
                   </li>
 
@@ -158,6 +158,7 @@
 <script type="text/javascript" src="js/suggestion-landingCtrl.js"></script>
 <script type="text/javascript" src="js/gameCtrl.js"></script>
 <script type="text/javascript" src="js/profileCtrl.js"></script>
+<script type="text/javascript" src="js/monsterCtrl.js"></script>
 
 </body>
 </html>
