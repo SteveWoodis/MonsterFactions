@@ -17,6 +17,10 @@ app.config(function($routeProvider){
         templateUrl: 'login/Registration.html',
         controller: 'RegController'
     })
+        .when('/monster-movies', {
+            templateUrl: 'monster-movie.html',
+            controller: 'monsterCtrl'
+        })
     .when('/Gallery', {
         templateUrl: 'mGallery.html',
         controller: 'mGalleryCtrl'
