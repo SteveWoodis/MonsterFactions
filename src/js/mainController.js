@@ -3,16 +3,31 @@ app.controller('mainController', function($scope, $log, $location) {
    $scope.items = [
       'Vampire',
       'Werewolf',
-      'Zombie',
-      'Suggest a Faction!'
+      'Zombie'
    ];
    $scope.selectedItem;
-   $scope.dropboxitemselected = function (item) {
+   $scope.status = {
+      isopen: false
+   };
 
-      $scope.selectedItem = item;
-      $location.path('$scope.selectedItem');
+   $scope.toggled = function(open) {
+      $log.log('Dropdown is now: ', open);
+   };
+
+   $scope.toggleDropdown = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+      $scope.status.isopen = !$scope.status.isopen;
+   };
+
+   $scope.dropboxitemselected = function(items){
+
+      $scope.selectedItem = items;
       alert($scope.selectedItem);
+      $location.path('/items/');
    }
+   $scope.appendToEl = angular.element(document.querySelector('#dropdown-long-content'));
+});
 
-})
+
   

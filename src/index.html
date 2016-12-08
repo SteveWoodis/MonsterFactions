@@ -26,13 +26,14 @@
                   <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
                   <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
 
-                  <!-- <li class="spacer"><a href="/#/factions" class="spacer-font">Factions</a></li> -->
-
-                      <!--  <ol id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle> -->
-                  <li class="uib-dropdown-toggle" id="DropDownMenu1" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true">Factions
-                     <li ng-repeat="item in items"><a ng-click="dropboxitemselected()">{{item}}</a></li>
+                  <li uib-dropdown on-toggle="toggled(open)">
+                    <a href id="simple-dropdown" uib-dropdown-toggle>Factions
+                    </a>
+                      <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                        <li ng-repeat="choice in items"><a ng-click="dropboxitemselected(choice)">{{choice}}</a>
+                        </li>
+                      </ul>
                   </li>
-
 
                   <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
                   <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
