@@ -11,3 +11,35 @@
 .table-nonfluid {
    width: auto;
 }
+
+.flex-footer {
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 2px;
+    height:270px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: #999999;
+}
+.footer-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:center;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content:center;
+    font-family: Calibri;
+    font-size: 8px;
+}
+.footer-links-left {
+    display: flex;
+    justify-content: center;
+}
+.footer-links-right {
+    display: flex;
+    justify-content: center;
+}
