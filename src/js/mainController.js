@@ -1,4 +1,4 @@
-var app = angular.module('monsterApp');
+varapp = angular.module('monsterApp');
 app.controller('mainController', function($scope, $log, $location) {
    $scope.items = [
       'Vampire',
@@ -20,11 +20,12 @@ app.controller('mainController', function($scope, $log, $location) {
       $scope.status.isopen = !$scope.status.isopen;
    };
 
-   $scope.dropboxitemselected = function(items){
+   $scope.dropboxitemselected = dropboxItemSelected;
+   function dropboxItemSelected(items){
 
       $scope.selectedItem = items;
       alert($scope.selectedItem);
-      $location.path('/items/');
+      $location.path('/' + items + '-landing');
    }
    $scope.appendToEl = angular.element(document.querySelector('#dropdown-long-content'));
 });

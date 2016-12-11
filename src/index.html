@@ -23,18 +23,15 @@
               <ul class="nav navbar-nav">
                   <li class="spacer"></li>
                   <li class="spacer"></li>
-                  <li><img src="../assets/images/monsterfactions-symbol-mini.jpg"></li>
+                  <li><img src="assets/images/monsterfactions-symbol-mini.jpg"></li>
                   <li class="spacer"><a href="/#/landing" class="spacer-font"> Home </a></li>
-
                   <li uib-dropdown on-toggle="toggled(open)">
-                    <a href id="simple-dropdown" uib-dropdown-toggle>Factions
-                    </a>
+                    <a href id="simple-dropdown" uib-dropdown-toggle>Factions</a>
                       <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
                         <li ng-repeat="choice in items"><a ng-click="dropboxitemselected(choice)">{{choice}}</a>
                         </li>
                       </ul>
                   </li>
-
                   <li class="spacer"><a href="/#/store" class="spacer-font">Monster Gear</a></li>
                   <li class="spacer"><a href="mChat/index.html" class="spacer-font">Monster Chat</a></li>
                   <li class="spacer"><a href="/#/Gallery" class="spacer-font">Monster Gallery</a></li>
