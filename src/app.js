@@ -50,13 +50,13 @@ app.config(function($routeProvider){
     }).when('/monsterNation', {
         templateUrl: 'monsternation.html',
         controller: 'monsterNationCtrl'
-    }).when('/werewolf-landing',{
+    }).when('/Werewolf-landing',{
         templateUrl: 'mChat/werewolf-landing.html',
         controller: 'werewolf-landingCtrl'
-    }).when('/vampire-landing', {
+    }).when('/Vampire-landing', {
         templateUrl: 'mChat/vampire-landing.html',
         controller: 'vampire-landingCtrl'
-    }).when('/zombie-landing', {
+    }).when('/Zombie-landing', {
         templateUrl: 'mChat/zombie-landing.html',
         controller: 'zombie-landingCtrl'
     }).when('/suggestion-landing',{

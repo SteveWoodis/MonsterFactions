@@ -43,6 +43,7 @@ html, body{
 }
 .container-fluid{
     height: 100%;
+    background-color: #999999;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 5px;
@@ -80,7 +81,8 @@ html, body{
     }
 .showall-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 .monster-points {
     padding: 5px auto;
@@ -110,7 +112,7 @@ html, body{
     margin-right: 3px;
     margin-top: 3px;
     margin-bottom: 3px;
-    display: inline-block;
+
     /*height: 370px;
      width: 657px;*/
 }
@@ -122,7 +124,7 @@ html, body{
     margin-bottom: 3px;
     /*height: 370px;
     width: 493px;*/
-    display: inline-block;
+
 }
 .zombie{
 
@@ -132,14 +134,102 @@ html, body{
     margin-bottom: 3px;
     /*height: 370px;
     width: 660px;*/
-    display: inline-block;
+
 }
 .symbol {
     margin-left: 3px;
     margin-right: 0px;
     margin-top: 3px;
     margin-bottom: 3px;
-    display: inline-block;
+
+}
+.vampire-pic {
+    height:256px;
+    width: 342px;
+    background: url("../assets/images/vampire-pic.jpg");
+    background-repeat: no-repeat;
+    border:1px solid #021a40;
+}
+.vampiretext {
+    width:150px;
+    height:25px;
+    background:transparent;
+    opacity:0;
+}
+.vampire-pic:hover .vampiretext {
+    opacity:0.6;
+    text-align:justify;
+    color:red;
+    font-size:36px;
+    font-weight:700;
+    font-family:"Times New Roman", Times, serif;
+    padding:0px;
+}
+.werewolf-pic:hover .werewolftext {
+    opacity:0.6;
+    text-align:justify;
+    color:burlywood;
+    font-size:36px;
+    font-weight:700;
+    font-family:"Times New Roman", Times, serif;
+    padding:0px;
+}
+.zombie-pic:hover .zombietext {
+    opacity:0.6;
+    text-align:justify;
+    color:greenyellow;
+    font-size:36px;
+    font-weight:700;
+    font-family:"Times New Roman", Times, serif;
+    padding:0px;
+}
+.symbol-pic:hover .symboltext {
+    opacity:0.6;
+    text-align:justify;
+    color:red;
+    font-size:36px;
+    font-weight:700;
+    font-family:"Times New Roman", Times, serif;
+    padding:0px;
+}
+.werewolf-pic {
+    height: 256px;
+     width: 330px;
+    background: url("../assets/images/werewolf-artwork1a.jpg");
+    background-repeat: no-repeat;
+    border:1px solid #021a40;
+}
+.werewolftext {
+    width:50px;
+    height:25px;
+    background:transparent;
+    opacity:0;
+}
+.zombie-pic {
+    height:256px;
+    width: 320px;
+    background: url("../assets/images/zombie-pic2a.jpg");
+    background-repeat: no-repeat;
+    border:1px solid #021a40;
+}
+.zombietext {
+    width:50px;
+    height:25px;
+    background:transparent;
+    opacity:0;
+}
+.symboltext {
+    width:50px;
+    height:25px;
+    background:transparent;
+    opacity:0;
+}
+.symbol-pic {
+    height: 256px;
+    width: 290px;
+    background: url("../assets/images/monsterfactions-symbol.jpg");
+    background-repeat: no-repeat;
+    border:1px solid #021a40;
 }
 .login-chat {
     padding: 5px auto;
@@ -273,6 +363,7 @@ html, body{
 
     padding: 0px auto;
     margin-left: 0px;
+    margin-top:7px;
     list-style: none;
     display: -webkit-box;
     display: -moz-box;
@@ -385,21 +476,6 @@ html, body{
     -webkit-flex-flow: row wrap;
 }
 
-.flex-footer {
-    width: 100%;
-    padding-top: 10px;
-    margin-top: 2px;
-    list-style: none;
-    height:370px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    background-color: #999999;
-    -webkit-flex-flow: row wrap;
-
-}
 .flex-main-view {
     padding: 5px auto;
     margin: 5px auto;
@@ -438,13 +514,8 @@ html, body{
     margin-right: 0;
     list-style: none;
     justify-content: space-between;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     flex-direction:row;
-    -webkit-flex-flow: row;
 
 }
 .separator{
@@ -482,8 +553,8 @@ html, body{
     
 }
 .spacer {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
     margin-top: 25px;
     display: inline-block;
     color: black;
@@ -521,69 +592,59 @@ html, body{
     display: inline-block;
     
 }
+
+.flex-footer {
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 2px;
+    height:270px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: #999999;
+}
 .footer-logo{
-    display: inline-block;
-    width:100%;
-    margin-left:45%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.footer-links {
-    display: inline-block;
-    width:100%;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content:center;
 }
-.footer-spacer {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 25px;
-    display: inline-block;
-}
+
 .footer-copyright {
-    display: inline-block;
-    width:100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 30%;
+    display: flex;
+    justify-content:center;
     font-family: Calibri;
     font-size: 8px;
 }
 .footer-links-left {
-    display: inline-block;
-    margin-left: 30%;
-    margin-right: 5%;
-
+    display: flex;
+    flex-align: center;
+    justify-content: center;
 }
 .footer-links-right {
-
-    display: inline-block;
-    margin-right:20%;
-    margin-left: 5%;
+    display: flex;
+    flex-align:center;
+    justify-content: center;
 }
 .footer-site-map {
-    display: inline-block;
     margin-left: 2px;
     margin-right:2px;
     font-family: Calibri;
     font-size: 18px;
 }
 .footer-feedback {
-    display: inline-block;
     margin-left: 2px;
     margin-right:2px;
     font-family: Calibri;
     font-size: 18px;
 }
 .footer-policies {
-    display: inline-block;
     margin-left: 2px;
     margin-right:2px;
     font-family: Calibri;
     font-size: 18px;
 }
 .facebook {
-    display: inline-block;
     margin-left: 2px;
     margin-right:2px;
 }
@@ -591,6 +652,9 @@ html, body{
     display: inline-block;
     margin-left: 2px;
     margin-right:2px;
+}
+.nav {
+    margin-bottom: 3px;
 }
 .pinterest {
     display: inline-block;
@@ -649,6 +713,9 @@ html, body{
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
+.Gallerycontainer{
+    background-color: lightgray;
+}
 .upper-right-monster{
     height: 250px;
     width: 240px;
@@ -703,6 +770,7 @@ html, body{
     text-align: center;
     color: black;
     font-family: "Something Strange";
+
 }
 
 .footer {

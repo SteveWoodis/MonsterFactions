@@ -97,18 +97,35 @@ html, body {
 .padding-20 {
     padding: 20px;
 }
+
 .flex-footer {
     width: 100%;
     padding-top: 10px;
     margin-top: 2px;
-    list-style: none;
-    height:370px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: block;
+    height:270px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
     background-color: #999999;
-    -webkit-flex-flow: row wrap;
+}
+.footer-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:center;
+}
 
+.footer-copyright {
+    display: flex;
+    justify-content:center;
+    font-family: Calibri;
+    font-size: 8px;
+}
+.footer-links-left {
+    display: flex;
+    justify-content: center;
+}
+.footer-links-right {
+    display: flex;
+    justify-content: center;
 }
