@@ -9,7 +9,7 @@ const Contact = () => {
     width: 600
   };
   return (
-    <div className="content flex-row space-around">
+    <div className="content flex-row space-around" style={{width: '100%'}}>
       <Paper style={style} zDepth={1}>
         <TextField
           fullWidth
